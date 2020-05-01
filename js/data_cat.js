@@ -163,12 +163,14 @@ function initPage() {
     .on("keyup", function() { if(d3.event.keyCode == 13) { queryEDI(); } })
     .on("change", function() { yearCheck(this, 0); });
 
+
   //***Adjust table height upon expansion/collapse
   $('.searchInput').on('shown.bs.collapse', function(e) { e.stopPropagation(); adjustTableDiv(e.target.id); });
   $('.searchInput').on('hide.bs.collapse', function(e) { e.stopPropagation(); });
   $('.searchInput').on('hidden.bs.collapse', function(e) { e.stopPropagation(); adjustTableDiv(e.target.id); });
 
   d3.selectAll(".narCaret").on("click", function() { swapCaret(this); });
+
 
   //***Swap caret glyphs when clicked
   function swapCaret(tmpEl) {
