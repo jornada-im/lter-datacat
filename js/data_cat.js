@@ -1,4 +1,4 @@
-function initPage() {
+function initPage(ediscope) {
 
   //******Initialize bootstrap tooltip
   $(function() {
@@ -268,12 +268,13 @@ function initPage() {
     var ok = yearCheck(d3.select("#beginYearSel")._groups[0][0], 1);
     if(ok == "no") { return; };
 
+    //***Build up the query
     //***Start query with EDI Source
     if (document.getElementById("ediSourceSel").value == "Released") {
-      var tmpQuery = 'https://pasta.lternet.edu/package/search/eml?defType=edismax&q=scope:knb-lter-jrn&rows=10000';
+      var tmpQuery = 'https://pasta.lternet.edu/package/search/eml?defType=edismax&q=scope:' + ediscope + '&rows=10000';
     }
     else {
-      var tmpQuery = 'https://pasta-s.lternet.edu/package/search/eml?defType=edismax&q=scope:knb-lter-jrn&rows=10000';
+      var tmpQuery = 'https://pasta-s.lternet.edu/package/search/eml?defType=edismax&q=scope:' + ediscope + '&rows=10000';
     }
 
     //***Add in data fields to retrieve
@@ -369,7 +370,7 @@ function initPage() {
       tmpQuery += '&fq=(begindate:%5B*+TO+' + tmpEnd + '-12-31T00:00:00Z/DAY%5D+AND+enddate:%5B*+TO+NOW%5D)';
     }
 
-console.log(tmpQuery);
+    console.log(tmpQuery);
 
     $.ajax({url: tmpQuery, dataType: "XML", success: function(tmpXML) {
       var x2js = new X2JS();

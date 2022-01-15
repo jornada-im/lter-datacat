@@ -14,4 +14,5 @@ repository on a website.
 
 ## Setting the EDI scope
 
-In `data_cat.js`, change 'knb-lter-jrn' to your EDI scope (2 places).
+In `index.html`, change 'knb-lter-jrn' to your EDI scope in the `init_page()`
+call.
