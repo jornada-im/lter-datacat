@@ -1,7 +1,8 @@
 html, body {
   height: 100%;
   width: 100%;
-  background: #ecf0f5;
+  background: #ffffff;
+  overflow: hidden;
 }
 
 #narMenuDiv {
@@ -13,9 +14,9 @@ html, body {
   text-align: center;
   margin: 10px;
   background: white;
-  border: 1px solid #aaaaaa;
   border-radius: 4px;
-  //max-height: calc(100vh - 195px);
+  transition: 0.5s;
+  overflow: hidden;
 }
 
 #searchDiv1, #searchDiv2 {
@@ -86,8 +87,14 @@ label {
 
 .btn {
   background: #3c8dbc;
-  border: 2px solid #aaaaaa;
-  padding: 2px 12px;
+  padding: 0px 15px 4px 15px;
+  border-radius: 34px;
+  height: 44px;
+  box-shadow: 0px 10px 20px 5px rgb(0 0 0 / 15%);
+}
+
+.searchCrit .btn {
+  margin-top: 30px;
 }
 
 .btn:focus {
@@ -101,7 +108,7 @@ label {
 
 .btn:hover {
   border-color: silver;
-  background: #367fa9;
+  background: #286090;
 }
 
 .btn i {
@@ -231,6 +238,14 @@ label {
   width: 27%;
   display: inline-block;
   vertical-align: middle;
+}
+
+.footerDiv .btn{
+color: white;
+}
+
+.footerDiv .btn:disabled{
+  background-color: gray;
 }
 
 #recShow {

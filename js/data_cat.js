@@ -31,6 +31,99 @@ function initPage(ediscope) {
 
   }
 
+  //***********************************************************
+  // Define variables and functions for basic search
+
+  var debugOn = false;
+  var basicSearchInput = document.getElementById("searchBasicText");
+  var searchType = "basic";
+  var pjrData;
+
+  // get CSV file
+  if (!debugOn) {
+  d3.csv('jrn_datasets_projects_2.csv')
+    .then(function (data) {
+      console.log("Loaded")
+      pjrData = data;
+    })
+    .catch(function (error) {
+      console.log("Fail")
+    })
+  }
+
+  // toggle between basic and advance search
+  $("#advance_search_bt").click(function () {
+    var sDiv = document.getElementById("basic_search_div");
+    var sBar = document.getElementById("basic_search_bar");
+    var advDiv = document.getElementById("searchContainer");
+    var advBt = document.getElementById("advance_search_bt");
+    if (advDiv.classList.contains("show_advance")) {
+      advDiv.classList.remove("show_advance");
+      advBt.classList.remove("fa-times");
+      advBt.classList.add("fa-sliders");
+      sBar.style.removeProperty("width");
+      advBt.dataset.originalTitle = "Advance Search";
+      sDiv.classList.remove("hide");
+      basicSearchInput.style.display = "block";
+      $("#basic_search_bar span")[0].style.display = "none";
+      searchType = "basic";
+    } else {
+      advDiv.classList.add("show_advance");
+      sBar.style.width = "200px";
+      advBt.classList.remove("fa-sliders");
+      advBt.classList.add("fa-times");
+      advBt.dataset.originalTitle = "Close Advance Search";
+      sDiv.classList.add("hide");
+      basicSearchInput.style.display = "none";
+      $("#basic_search_bar span")[0].style.display = "block";
+      searchType = "advance";
+    }
+    setTimeout(function () {
+      adjustTableDiv();
+    }, 500);
+  });
+
+  // Show clear icon on input of basic search
+  document.getElementById("searchBasicText").onkeyup = function () {
+    var clearBt = document.getElementById("clear");
+    var helpBt = document.getElementById("basicHelp");
+    if (this.value.length > 0 && $("#basicHelp").css("display") == "block") {
+      console.log("show clear")
+      helpBt.style.opacity = 0;
+      setTimeout(function () {
+        helpBt.style.display = "none";
+        clearBt.style.display = "block";
+        setTimeout(function () {
+          clearBt.style.opacity = 1;
+        }, 300);
+      }, 400);
+    } else if (this.value.length == 0) {
+      clearBt.style.opacity = 0;
+      setTimeout(function () {
+        clearBt.style.display = "none";
+        helpBt.style.display = "block";
+        setTimeout(function () {
+          helpBt.style.opacity = 1;
+        }, 300);
+      }, 400);
+    }
+  };
+
+  // clear basic seach input
+  $("#clear").click(function () {
+    var clearBt = document.getElementById("clear");
+    var helpBt = document.getElementById("basicHelp");
+    clearBt.style.opacity = 0;
+    setTimeout(function () {
+      clearBt.style.display = "none";
+      helpBt.style.display = "block";
+      helpBt.style.opacity = 1;
+    }, 500);
+    basicSearchInput.value = "";
+  });
+
+  //*************************************************
+
   //******Add search containers: 2 rows on wide format
   d3.select("body")
     .append("div")
@@ -39,7 +132,7 @@ function initPage(ediscope) {
 
   d3.select("body")
     .append("div")
-    .attr("class", "containerDiv collapse")
+    .attr("class", "containerDiv collapse hide_advance")
     .attr("id", "searchContainer")
       .append("div")
       .attr("id", "searchDiv1");
@@ -55,25 +148,6 @@ function initPage(ediscope) {
 
   //***Add search criteria to first row
   var sd = d3.select("#searchDiv1");
-
-  //***Add EDI source
-  sd.append("div")
-    .attr("class", "searchCrit")
-    .attr("id", "ediSource")
-    .html('<div class="searchTopDiv"><h4>EDI Source'
-      + '<span><i class="fa fa-info-circle" data-toggle="tooltip" data-container="body" data-placement="auto" data-html="true" title="<p><b><u>EDI Source</u></b></p><p>The EDI database to search:<br><ul><li><b>Released:</b> Data catalogs that have been released</li><li><b>Staged:</b> Data catalogs that have been uploaded but not officially released</li></ul></p>"></i></span>'
-      + '</h4><span class="pullRight"><i class="narCaret fa fa-caret-down" data-toggle="collapse" data-target="#ediSourceDiv" aria-expanded="false"></i></span></div>'
-    );
-
-  d3.select("#ediSource")
-    .append("div")
-    .attr("class", "searchInput collapse")
-    .attr("id", "ediSourceDiv")
-    .append("select")
-    .attr("class", "searchSel")
-    .attr("id", "ediSourceSel")
-    .html('<option>Released</option><option disabled>Staged</option>');
-
 
   //***Add EDI keyword
   sd.append("div")
@@ -96,7 +170,6 @@ function initPage(ediscope) {
     .append("div")
     .html('<label>Operator:<input type="radio" class="radioInput" name="keywordsOp" value="And" checked>And</input><input type="radio" class="radioInput" name="keywordsOp" value="Or">Or</input></label>');
 
-
   //***Add EDI author
   sd.append("div")
     .attr("class", "searchCrit")
@@ -118,30 +191,33 @@ function initPage(ediscope) {
     .append("div")
     .html('<label>Operator:<input type="radio" class="radioInput" name="authorsOp" value="And" checked>And</input><input type="radio" class="radioInput" name="authorsOp" value="Or">Or</input></label>');
 
+   //***Add EDI title
+   sd.append("div")
+   .attr("class", "searchCrit")
+   .attr("id", "title")
+   .html('<div class="searchTopDiv"><h4>Title'
+     + '<span><i class="fa fa-info-circle" data-toggle="tooltip" data-container="body" data-placement="auto" data-html="true" title="<p><b><u>Title</u></b></p><p>Search by words present in the title of the data catalog.<br><br>Multiple words will be treated as a single search term.</p>"></i></span>'
+     + '</h4><span class="pullRight"><i class="narCaret fa fa-caret-down" data-toggle="collapse" data-target="#titleDiv" aria-expanded="false"></i></span></div>'
+   );
+
+ d3.select("#title")
+   .append("div")
+   .attr("class", "searchInput collapse")
+   .attr("id", "titleDiv")
+   .append("input")
+   .attr("class", "searchSel")
+   .attr("id", "titleSel");  
 
   //***Add Search criteria to second row 
   var sd = d3.select("#searchDiv2");
 
-  //***Add EDI title
-  sd.append("div")
-    .attr("class", "searchCrit")
-    .attr("id", "title")
-    .html('<div class="searchTopDiv"><h4>Title'
-      + '<span><i class="fa fa-info-circle" data-toggle="tooltip" data-container="body" data-placement="auto" data-html="true" title="<p><b><u>Title</u></b></p><p>Search by words present in the title of the data catalog.<br><br>Multiple words will be treated as a single search term.</p>"></i></span>'
-      + '</h4><span class="pullRight"><i class="narCaret fa fa-caret-down" data-toggle="collapse" data-target="#titleDiv" aria-expanded="false"></i></span></div>'
-    );
-
-  d3.select("#title")
-    .append("div")
-    .attr("class", "searchInput collapse")
-    .attr("id", "titleDiv")
-    .append("input")
-    .attr("class", "searchSel")
-    .attr("id", "titleSel");
-
   d3.selectAll(".searchSel")
     .on("dblclick", function() { this.value = ""; })
-    .on("keyup", function() { if(d3.event.keyCode == 13) { queryEDI(); } });
+    .on("keyup", function() { 
+      if(d3.event.keyCode == 13) { 
+        queryEDI(); 
+      } 
+    });
 
   //***Add data coverage years
   sd.append("div")
@@ -160,9 +236,21 @@ function initPage(ediscope) {
 
   d3.selectAll(".searchSel.half")
     .on("dblclick", function() { this.value = ""; })
-    .on("keyup", function() { if(d3.event.keyCode == 13) { queryEDI(); } })
+    .on("keyup", function() { 
+      if(d3.event.keyCode == 13) {
+        queryEDI(); 
+      } 
+    })
     .on("change", function() { yearCheck(this, 0); });
 
+  //*** Add search Button for advance search */
+  sd.append("div")
+    .attr("class", "searchCrit")
+    .append("button")
+    .attr("class", "btn")
+    .attr("id", "searchBut")
+    .on("click", function() { queryEDI(); })
+    .html('<i class="fa fa-search"></i><h4>Search</h4>');
 
   //***Adjust table height upon expansion/collapse
   $('.searchInput').on('shown.bs.collapse', function(e) { e.stopPropagation(); adjustTableDiv(e.target.id); });
@@ -170,7 +258,6 @@ function initPage(ediscope) {
   $('.searchInput').on('hidden.bs.collapse', function(e) { e.stopPropagation(); adjustTableDiv(e.target.id); });
 
   d3.selectAll(".narCaret").on("click", function() { swapCaret(this); });
-
 
   //***Swap caret glyphs when clicked
   function swapCaret(tmpEl) {
@@ -206,18 +293,7 @@ function initPage(ediscope) {
     }
   } 
 
-  //***Add search button
-  d3.select("#searchContainer")
-    .append("div")
-    .attr("class", "searchButDiv")
-      .append("button")
-      .attr("class", "btn")
-      .attr("id", "searchBut")
-      .on("click", function() { queryEDI(); })
-      .on("mouseenter", function() { d3.select(this).selectAll("*").style("color", "lightskyblue"); })
-      .on("mouseleave", function() { d3.select(this).selectAll("*").style("color", ""); })
-      .html('<i class="fa fa-search"></i><h4>Search</h4>');
-
+  $("#searchBasic").on("click", function () { queryEDI(); })
 
   //******Add results container and table
   d3.select("body")
@@ -247,7 +323,7 @@ function initPage(ediscope) {
     .append("div")
     .attr("class", "footerDiv")
     .attr("id", "download")
-    .html('<div id="downloadText">Download to CSV</div><button id="downloadButton" class="btn btn-secondary" role="button" value="Download"><a id="downloadButtonA" href="#" download="Jornada_Basin_LTER_Data_Catalog.csv"><i class="fa fa-download"></i></a></button>');
+    .html('<div id="downloadText">Download to CSV</div><button id="downloadButton" class="btn" role="button" value="Download"><a id="downloadButtonA" href="#" download="Jornada_Basin_LTER_Data_Catalog.csv"><i class="fa fa-download"></i></a></button>');
 
   //***Add paging
   d3.select("#footerContainer")
@@ -256,12 +332,9 @@ function initPage(ediscope) {
     //.style("width", "44%")
     .attr("id", "paging")
     .html('<div id="pagingText">Showing <span id="begin"></span>-<span id="end"></span> of <span id="size"></span></div>'
-      + '<button id="Prev" class="btn btn-secondary" role="button" value="Prev">Prev</button>'
-      + '<button id="Next" class="btn btn-secondary" role="button" value="Next">Next</button>');
+      + '<button id="Prev" class="btn" role="button" value="Prev">Prev</button>'
+      + '<button id="Next" class="btn" role="button" value="Next">Next</button>');
   
-
-
-
   //******Search function
   function queryEDI() {
     //***Check data coverage years are of correct order
@@ -270,107 +343,119 @@ function initPage(ediscope) {
 
     //***Build up the query
     //***Start query with EDI Source
-    if (document.getElementById("ediSourceSel").value == "Released") {
-      var tmpQuery = 'https://pasta.lternet.edu/package/search/eml?defType=edismax&q=scope:' + ediscope + '&rows=10000';
-    }
-    else {
-      var tmpQuery = 'https://pasta-s.lternet.edu/package/search/eml?defType=edismax&q=scope:' + ediscope + '&rows=10000';
-    }
+    var tmpQuery = 'https://pasta.lternet.edu/package/search/eml?defType=edismax&q=scope:' + ediscope + '&rows=10000';
 
     //***Add in data fields to retrieve
-      var tmpFields = ["abstract", "begindate", "doi", "enddate", "funding", "geographicdescription", "id", "methods", "packageid", "pubdate", "responsibleParties", "scope", "singledate", "site", "taxonomic", "title", "author", "coordinates", "keyword", "organization", "projectTitle", "relatedProjectTitle", "timescale"];
-      tmpFields.forEach(function(field, i) {
-        if (i == 0) {
-          tmpQuery += "&fl=" + field;
-        }
-        else {
-          tmpQuery += "," + field;
-        }
-      });
-
-    //***Add keywords to query
-    if(d3.select("#keywordsSel").property("value") !== "") {
-      var tmpKeywords = splitStrip(d3.select("#keywordsSel").property("value"));
-      tmpKeywords.forEach(function(key,i) {
-        if(i == 0) {
-          if(key.includes(" ") == true) {
-            tmpQuery += '&fq=keyword:"' + key.replace(/ /g, "%20") + '"';
-          }
-          else {
-            tmpQuery += '&fq=keyword:' + key;
-          }
-        }
-        else {
-          var tmpOp = document.querySelector('input[name="keywordsOp"]:checked').value;
-          
-          if(key.includes(" ") == true) {
-            tmpQuery += '+' + tmpOp.toUpperCase() + '+keyword:"' + key.replace(/ /g, "%20") + '"';
-          }
-          else {
-            tmpQuery += '+' + tmpOp.toUpperCase() + '+keyword:' + key;
-          }
-        }
-      });
-      d3.select("#keywordsSel").property("value", tmpKeywords.join("; "));
-    }
-
-
-    //***Add authors to query
-    if(d3.select("#authorsSel").property("value") !== "") {
-      var tmpAuthors = splitStrip(d3.select("#authorsSel").property("value"));
-      tmpAuthors.forEach(function(key,i) {
-        if(i == 0) {
-          if(key.includes(" ") == true) {
-            tmpQuery += '&fq=author:"' + key + '"';
-          }
-          else {
-            tmpQuery += '&fq=author:' + key;
-          }
-        }
-        else {
-          var tmpOp = document.querySelector('input[name="authorsOp"]:checked').value;
-          
-          if(key.includes(" ") == true) {
-            tmpQuery += '+' + tmpOp.toUpperCase() + '+author:"' + key + '"';
-          }
-          else {
-            tmpQuery += '+' + tmpOp.toUpperCase() + '+author:' + key;
-          }
-        }
-      });
-      d3.select("#authorsSel").property("value", tmpAuthors.join("; "));
-    }
-
-
-    //***Add title to query
-    var tmpTitle = d3.select("#titleSel").property("value");
-    if(tmpTitle !== "") {
-      if(tmpTitle.includes(" ") == true) {
-        tmpQuery += '&fq=title:"' + tmpTitle + '"';
+    var tmpFields = ["abstract", "begindate", "doi", "enddate", "funding", "geographicdescription", "id", "methods", "packageid", "pubdate", "responsibleParties", "scope", "singledate", "site", "taxonomic", "title", "author", "coordinates", "keyword", "organization", "projectTitle", "relatedProjectTitle", "timescale"];
+    tmpFields.forEach(function(field, i) {
+      if (i == 0) {
+        tmpQuery += "&fl=" + field;
       }
       else {
-        tmpQuery += '&fq=title:' + tmpTitle;
+        tmpQuery += "," + field;
+      }
+    });
+
+    searchValue = document.getElementById("searchBasicText").value;
+    if (searchType == "basic" && searchValue) {
+      // Basic Search
+      // add query for basic search to look for in keyword, author, and title
+      var tmpKeywords = splitStrip(d3.select("#searchBasicText").property("value"));
+      tmpKeywords.forEach(function(key, i) {
+        var val = key;
+        if(key.includes(" ") == true) {
+          val = key.replace(/ /g, "+");
+        }
+        if(i == 0) {  
+          tmpQuery += '&fq=keyword:' + val + '+OR+author:' + val + '+OR+title:' + val;
+        } else {
+          tmpQuery += '+OR+keyword:' + val + '+OR+author:' + val + '+OR+title:' + val;
+        }
+      });
+    } else {
+      // Advance Search
+      //***Add keywords to query
+      if(d3.select("#keywordsSel").property("value") !== "") {
+        var tmpKeywords = splitStrip(d3.select("#keywordsSel").property("value"));
+        tmpKeywords.forEach(function(key,i) {
+          if(i == 0) {
+            if(key.includes(" ") == true) {
+              tmpQuery += '&fq=keyword:"' + key.replace(/ /g, "%20") + '"';
+            }
+            else {
+              tmpQuery += '&fq=keyword:' + key;
+            }
+          }
+          else {
+            var tmpOp = document.querySelector('input[name="keywordsOp"]:checked').value;
+            
+            if(key.includes(" ") == true) {
+              tmpQuery += '+' + tmpOp.toUpperCase() + '+keyword:"' + key.replace(/ /g, "%20") + '"';
+            }
+            else {
+              tmpQuery += '+' + tmpOp.toUpperCase() + '+keyword:' + key;
+            }
+          }
+        });
+        d3.select("#keywordsSel").property("value", tmpKeywords.join("; "));
+      }
+
+      //***Add authors to query
+      if(d3.select("#authorsSel").property("value") !== "") {
+        var tmpAuthors = splitStrip(d3.select("#authorsSel").property("value"));
+        tmpAuthors.forEach(function(key,i) {
+          if(i == 0) {
+            if(key.includes(" ") == true) {
+              tmpQuery += '&fq=author:"' + key + '"';
+            }
+            else {
+              tmpQuery += '&fq=author:' + key;
+            }
+          }
+          else {
+            var tmpOp = document.querySelector('input[name="authorsOp"]:checked').value;
+            
+            if(key.includes(" ") == true) {
+              tmpQuery += '+' + tmpOp.toUpperCase() + '+author:"' + key + '"';
+            }
+            else {
+              tmpQuery += '+' + tmpOp.toUpperCase() + '+author:' + key;
+            }
+          }
+        });
+        d3.select("#authorsSel").property("value", tmpAuthors.join("; "));
+      }
+
+      //***Add title to query
+      var tmpTitle = d3.select("#titleSel").property("value");
+      if(tmpTitle !== "") {
+        if(tmpTitle.includes(" ") == true) {
+          tmpQuery += '&fq=title:"' + tmpTitle + '"';
+        }
+        else {
+          tmpQuery += '&fq=title:' + tmpTitle;
+        }
+      }
+
+      //***Add years to query
+      if(d3.select("#beginYearSel").property("value") !== "" && d3.select("#endYearSel").property("value") !== "") {
+        var tmpBegin = d3.select("#beginYearSel").property("value");
+        var tmpEnd = d3.select("#endYearSel").property("value");
+        tmpQuery += '&fq=(begindate:%5B*+TO+' + tmpEnd + '-12-31T00:00:00Z/DAY%5D+AND+enddate:%5B' + tmpBegin + '-01-01T00:00:00Z/DAY+TO+NOW%5D)';
+      }
+      else if(d3.select("#beginYearSel").property("value") !== "") {
+        var tmpBegin = d3.select("#beginYearSel").property("value");
+        var tmpEnd = "NOW";
+        tmpQuery += '&fq=(begindate:%5B*+TO+NOW%5D+AND+enddate:%5B' + tmpBegin + '-01-01T00:00:00Z/DAY+TO+NOW%5D)';
+      }
+      else if(d3.select("#endYearSel").property("value") !== "") {
+        var tmpBegin = "*";
+        var tmpEnd = d3.select("#endYearSel").property("value");
+        tmpQuery += '&fq=(begindate:%5B*+TO+' + tmpEnd + '-12-31T00:00:00Z/DAY%5D+AND+enddate:%5B*+TO+NOW%5D)';
       }
     }
-
-    //***Add years to query
-    if(d3.select("#beginYearSel").property("value") !== "" && d3.select("#endYearSel").property("value") !== "") {
-      var tmpBegin = d3.select("#beginYearSel").property("value");
-      var tmpEnd = d3.select("#endYearSel").property("value");
-      tmpQuery += '&fq=(begindate:%5B*+TO+' + tmpEnd + '-12-31T00:00:00Z/DAY%5D+AND+enddate:%5B' + tmpBegin + '-01-01T00:00:00Z/DAY+TO+NOW%5D)';
-    }
-    else if(d3.select("#beginYearSel").property("value") !== "") {
-      var tmpBegin = d3.select("#beginYearSel").property("value");
-      var tmpEnd = "NOW";
-      tmpQuery += '&fq=(begindate:%5B*+TO+NOW%5D+AND+enddate:%5B' + tmpBegin + '-01-01T00:00:00Z/DAY+TO+NOW%5D)';
-    }
-    else if(d3.select("#endYearSel").property("value") !== "") {
-      var tmpBegin = "*";
-      var tmpEnd = d3.select("#endYearSel").property("value");
-      tmpQuery += '&fq=(begindate:%5B*+TO+' + tmpEnd + '-12-31T00:00:00Z/DAY%5D+AND+enddate:%5B*+TO+NOW%5D)';
-    }
-
-    console.log(tmpQuery);
+      
+    console.log(searchType + ":" + tmpQuery);
 
     $.ajax({url: tmpQuery, dataType: "XML", success: function(tmpXML) {
       var x2js = new X2JS();
@@ -410,18 +495,7 @@ function initPage(ediscope) {
             }
             rec[tmpField] = tmpStr;
           });
-/*
-          var tmpAut = rec.authors;
-          for (var aut in tmpAut) {
-            if(Array.isArray(tmpAut[aut]) == true) {
-              var tmpStr = tmpAut[aut].join("; ");
-            }
-            else {
-              var tmpStr = tmpAut[aut];
-            }
-          }
-          rec.authors = tmpStr;
-*/
+
           rec.doi = rec.doi.replace("doi:", "https://doi.org/");
         });
 
@@ -451,6 +525,8 @@ function initPage(ediscope) {
               {label: "Begin Date", field_name: "begindate", sort_state: "descending"},
               {label: "End Date", field_name: "enddate", sort_state: "descending"},
               {label: "DOI", field_name: "doi", sort_state: "descending"},
+              {label: "Project", field_name: "project_title", sort_state: "descending"},
+              {label: "Resnotif ID", field_name: "resnotif_id", sort_state: "descending"},
             ])
             .enter()
             .append("th")
@@ -471,7 +547,13 @@ function initPage(ediscope) {
         
         var initField = d3.select(".info").datum().field_name;
 
-        cf = crossfilter(tmpRecs); // Main crossfilter objects
+        if (!debugOn) {
+          let newTable = tmpRecs
+            .map(u => ({ ...pjrData.find(q => q.id === u.id), ...u }));
+            cf = crossfilter(newTable); // Main crossfilter objects
+        } else {
+          cf = crossfilter(tmpRecs); // Main crossfilter objects
+        }
 
         // Setup different dimensions for plots
         var tmpData = d3.select(".table-header").selectAll("th").data();
@@ -519,6 +601,8 @@ function initPage(ediscope) {
           function(d) { return d.begindate; },
           function(d) { return d.enddate; },
           function(d) { return d.doi; },
+          function(d) { return d.project_title; },
+          function(d) { return d.resnotif_id; },
         ];
         // Pagination implementation inspired by:
         // https://github.com/dc-js/dc.js/blob/master/web/examples/table-pagination.html
