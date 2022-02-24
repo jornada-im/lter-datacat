@@ -62,7 +62,7 @@ function initPage(ediscope) {
       advBt.classList.remove("fa-times");
       advBt.classList.add("fa-sliders");
       sBar.style.removeProperty("width");
-      advBt.dataset.originalTitle = "Advance Search";
+      advBt.dataset.originalTitle = "Advanced Search";
       sDiv.classList.remove("hide");
       basicSearchInput.style.display = "block";
       $("#basic_search_bar span")[0].style.display = "none";
@@ -72,7 +72,7 @@ function initPage(ediscope) {
       sBar.style.width = "200px";
       advBt.classList.remove("fa-sliders");
       advBt.classList.add("fa-times");
-      advBt.dataset.originalTitle = "Close Advance Search";
+      advBt.dataset.originalTitle = "Close Advanced Search";
       sDiv.classList.add("hide");
       basicSearchInput.style.display = "none";
       $("#basic_search_bar span")[0].style.display = "block";
