@@ -1,0 +1,352 @@
+project_id,package_id,scope,dataset_id,version,project_num,title,shortname,search_column_1
+100,knb-lter-jrn.100.3,knb-lter-jrn,100,3,100,High resolution shrub cover raster maps of the Jornada Basin,NA,Study 100
+101,knb-lter-jrn.101.1,knb-lter-jrn,101,1,101,Thresholds and alternative states in neotropical dry forest,NA,Study 101
+200021,knb-lter-jrn.200021001.4,knb-lter-jrn,200021001,4,NA,NA,NA,Study NA
+200022,knb-lter-jrn.200022001.1,knb-lter-jrn,200022001,1,22,Criollo and crossbred steer comparison,NA,Study 022
+200045,knb-lter-jrn.200045001.2,knb-lter-jrn,200045001,2,NA,NA,NA,Study NA
+210001,knb-lter-jrn.210001002.76,knb-lter-jrn,210001002,76,1,Hydrology-Runoff-Plots,HYDRPLOT,Study 001 - HYDRPLOT
+210001,knb-lter-jrn.210001003.79,knb-lter-jrn,210001003,79,1,Hydrology-Runoff-Plots,HYDRPLOT,Study 001 - HYDRPLOT
+210001,knb-lter-jrn.210001001.62,knb-lter-jrn,210001001,62,1,Hydrology-Runoff-Plots,HYDRPLOT,Study 001 - HYDRPLOT
+210002,knb-lter-jrn.210002001.127,knb-lter-jrn,210002001,127,2,NPP GRG precipitation,NPP_GRG,Study 002 - NPP_GRG
+210007,knb-lter-jrn.210007001.37,knb-lter-jrn,210007001,37,7,LTER II pitfall lizards at NPP sites,LIZRDPIT,Study 007 - LIZRDPIT
+210008,knb-lter-jrn.210008001.60,knb-lter-jrn,210008001,60,8,Pitfall Arthropods near LTER II NPP sites,ARTHPIT2,Study 008 - ARTHPIT2
+210008,knb-lter-jrn.210008002.2,knb-lter-jrn,210008002,2,8,Pitfall Arthropods near LTER II NPP sites,ARTHPIT2,Study 008 - ARTHPIT2
+210010,knb-lter-jrn.210010001.75,knb-lter-jrn,210010001,75,10,Termite bait decomposition grids at NPP sites,TERMBAIT,Study 010 - TERMBAIT
+210011,knb-lter-jrn.210011005.105,knb-lter-jrn,210011005,105,11,LTER II plant net primary production in 5 dominant vegetation zones at 15 sites,NPPVEG,Study 011 - NPPVEG
+210011,knb-lter-jrn.210011004.83,knb-lter-jrn,210011004,83,11,LTER II plant net primary production in 5 dominant vegetation zones at 15 sites,NPPVEG,Study 011 - NPPVEG
+210011,knb-lter-jrn.210011003.104,knb-lter-jrn,210011003,104,11,LTER II plant net primary production in 5 dominant vegetation zones at 15 sites,NPPVEG,Study 011 - NPPVEG
+210011,knb-lter-jrn.210011002.107,knb-lter-jrn,210011002,107,11,LTER II plant net primary production in 5 dominant vegetation zones at 15 sites,NPPVEG,Study 011 - NPPVEG
+210011,knb-lter-jrn.210011001.1,knb-lter-jrn,210011001,1,11,LTER II plant net primary production in 5 dominant vegetation zones at 15 sites,NPPVEG,Study 011 - NPPVEG
+210012,knb-lter-jrn.210012002.127,knb-lter-jrn,210012002,127,12,LTER-I Transects soil water content measurements,TRANSWC,Study 012 - TRANSWC
+210012,knb-lter-jrn.210012001.139,knb-lter-jrn,210012001,139,12,LTER-I Transects soil water content measurements,TRANSWC,Study 012 - TRANSWC
+210013,knb-lter-jrn.210013002.71,knb-lter-jrn,210013002,71,13,LTER II soil water content - NPP sites,NPPSWC,Study 013 - NPPSWC
+210013,knb-lter-jrn.210013001.62,knb-lter-jrn,210013001,62,13,LTER II soil water content - NPP sites,NPPSWC,Study 013 - NPPSWC
+210013,knb-lter-jrn.210013003.16,knb-lter-jrn,210013003,16,13,LTER II soil water content - NPP sites,NPPSWC,Study 013 - NPPSWC
+210015,knb-lter-jrn.210015002.45,knb-lter-jrn,210015002,45,15,LTER I Transect biomass harvests on Control and Treatment transects,TRANBIOM,Study 015 - TRANBIOM
+210015,knb-lter-jrn.210015003.49,knb-lter-jrn,210015003,49,15,LTER I Transect biomass harvests on Control and Treatment transects,TRANBIOM,Study 015 - TRANBIOM
+210015,knb-lter-jrn.210015001.48,knb-lter-jrn,210015001,48,15,LTER I Transect biomass harvests on Control and Treatment transects,TRANBIOM,Study 015 - TRANBIOM
+210086,knb-lter-jrn.210086002.95,knb-lter-jrn,210086002,95,86,Jornada Small Mammal Exclosure Study,SMES,Study 086 - SMES
+210086,knb-lter-jrn.210086003.73,knb-lter-jrn,210086003,73,86,Jornada Small Mammal Exclosure Study,SMES,Study 086 - SMES
+210086,knb-lter-jrn.210086008.61,knb-lter-jrn,210086008,61,86,Jornada Small Mammal Exclosure Study,SMES,Study 086 - SMES
+210086,knb-lter-jrn.210086001.63,knb-lter-jrn,210086001,63,86,Jornada Small Mammal Exclosure Study,SMES,Study 086 - SMES
+210086,knb-lter-jrn.210086009.74,knb-lter-jrn,210086009,74,86,Jornada Small Mammal Exclosure Study,SMES,Study 086 - SMES
+210086,knb-lter-jrn.210086007.90,knb-lter-jrn,210086007,90,86,Jornada Small Mammal Exclosure Study,SMES,Study 086 - SMES
+210086,knb-lter-jrn.210086004.104,knb-lter-jrn,210086004,104,86,Jornada Small Mammal Exclosure Study,SMES,Study 086 - SMES
+210086,knb-lter-jrn.210086005.92,knb-lter-jrn,210086005,92,86,Jornada Small Mammal Exclosure Study,SMES,Study 086 - SMES
+210086,knb-lter-jrn.210086006.83,knb-lter-jrn,210086006,83,86,Jornada Small Mammal Exclosure Study,SMES,Study 086 - SMES
+210119,knb-lter-jrn.210119001.128,knb-lter-jrn,210119001,128,119,LTER-I transect vegetation plant line intercept study,TRANPLI,Study 119 - TRANPLI
+210120,knb-lter-jrn.210120002.85,knb-lter-jrn,210120002,85,120,LTER-I fenceline vegetation plant line intercept study,FENCE,Study 120 - FENCE
+210120,knb-lter-jrn.210120001.91,knb-lter-jrn,210120001,91,120,LTER-I fenceline vegetation plant line intercept study,FENCE,Study 120 - FENCE
+210121,knb-lter-jrn.210121005.78,knb-lter-jrn,210121005,78,121,Biodiversity experiment in Pasture 10 on College Ranch (CDRRC),BIODVSTY,Study 121 - BIODVSTY
+210121,knb-lter-jrn.210121008.72,knb-lter-jrn,210121008,72,121,Biodiversity experiment in Pasture 10 on College Ranch (CDRRC),BIODVSTY,Study 121 - BIODVSTY
+210121,knb-lter-jrn.210121001.49,knb-lter-jrn,210121001,49,121,Biodiversity experiment in Pasture 10 on College Ranch (CDRRC),BIODVSTY,Study 121 - BIODVSTY
+210121,knb-lter-jrn.210121006.68,knb-lter-jrn,210121006,68,121,Biodiversity experiment in Pasture 10 on College Ranch (CDRRC),BIODVSTY,Study 121 - BIODVSTY
+210122,knb-lter-jrn.210122001.87,knb-lter-jrn,210122001,87,122,Crust Evolution at Scrape Site,CRUSTEVO,Study 122 - CRUSTEVO
+210126,knb-lter-jrn.210126003.100,knb-lter-jrn,210126003,100,126,Jornada LTER Weather Station,LTERWS,Study 126 - LTERWS
+210126,knb-lter-jrn.210126001.119,knb-lter-jrn,210126001,119,126,Jornada LTER Weather Station,LTERWS,Study 126 - LTERWS
+210127,knb-lter-jrn.210127001.111,knb-lter-jrn,210127001,111,127,Jornada LTER evaporation pan data,NA,Study 127
+210128,knb-lter-jrn.210128002.3,knb-lter-jrn,210128002,3,128,Wetfall and Dryfall deposition chemistry data,NA,Study 128
+210128,knb-lter-jrn.210128001.3,knb-lter-jrn,210128001,3,128,Wetfall and Dryfall deposition chemistry data,NA,Study 128
+210228,knb-lter-jrn.210228001.54,knb-lter-jrn,210228001,54,228,Nutrient and Ecosystem impacts of Aeolian Transport (NEAT),NEAT,Study 228 - NEAT
+210228,knb-lter-jrn.210228002.1,knb-lter-jrn,210228002,1,228,Nutrient and Ecosystem impacts of Aeolian Transport (NEAT),NEAT,Study 228 - NEAT
+210262,knb-lter-jrn.210262004.93,knb-lter-jrn,210262004,93,262,"[Ecotone small mammal study] Demography, Resource use and Genetic Structure of a Small Mammal Population in the Chihuahuan Desert: Feedbacks Between Rodents and the Dynamics of Grassland-Shrubland Ecotones",Ecotone,Study 262 - Ecotone
+210262,knb-lter-jrn.210262008.139,knb-lter-jrn,210262008,139,262,"[Ecotone small mammal study] Demography, Resource use and Genetic Structure of a Small Mammal Population in the Chihuahuan Desert: Feedbacks Between Rodents and the Dynamics of Grassland-Shrubland Ecotones",Ecotone,Study 262 - Ecotone
+210262,knb-lter-jrn.210262005.9,knb-lter-jrn,210262005,9,262,"[Ecotone small mammal study] Demography, Resource use and Genetic Structure of a Small Mammal Population in the Chihuahuan Desert: Feedbacks Between Rodents and the Dynamics of Grassland-Shrubland Ecotones",Ecotone,Study 262 - Ecotone
+210262,knb-lter-jrn.210262001.8,knb-lter-jrn,210262001,8,262,"[Ecotone small mammal study] Demography, Resource use and Genetic Structure of a Small Mammal Population in the Chihuahuan Desert: Feedbacks Between Rodents and the Dynamics of Grassland-Shrubland Ecotones",Ecotone,Study 262 - Ecotone
+210262,knb-lter-jrn.210262010.88,knb-lter-jrn,210262010,88,262,"[Ecotone small mammal study] Demography, Resource use and Genetic Structure of a Small Mammal Population in the Chihuahuan Desert: Feedbacks Between Rodents and the Dynamics of Grassland-Shrubland Ecotones",Ecotone,Study 262 - Ecotone
+210278,knb-lter-jrn.210278002.91,knb-lter-jrn,210278002,91,278,Responses of aboveground primary production to changes in water availability: understanding the meristem density limitation,PPT shelters - Sala-Reichman,Study 278 - PPT shelters - Sala-Reichman
+210278,knb-lter-jrn.210278001.58,knb-lter-jrn,210278001,58,278,Responses of aboveground primary production to changes in water availability: understanding the meristem density limitation,PPT shelters - Sala-Reichman,Study 278 - PPT shelters - Sala-Reichman
+210287,knb-lter-jrn.210287001.83,knb-lter-jrn,210287001,83,287,Perennial Plant Phenology on NPP Sites,NPPPHEN,Study 287 - NPPPHEN
+210288,knb-lter-jrn.210288001.102,knb-lter-jrn,210288001,102,288,"BSNE dust collection at NPP, JER Pasture 13, Geomet sites",SANDFLUX,Study 288 - SANDFLUX
+210301,knb-lter-jrn.210301002.78,knb-lter-jrn,210301002,78,301,The effect of wind as a driver of decomposition in arid systems.,Aggregate Mesquite Litter,Study 301 - Aggregate Mesquite Litter
+210301,knb-lter-jrn.210301001.57,knb-lter-jrn,210301001,57,301,The effect of wind as a driver of decomposition in arid systems.,Aggregate Mesquite Litter,Study 301 - Aggregate Mesquite Litter
+210308,knb-lter-jrn.210308002.58,knb-lter-jrn,210308002,58,308,NA,Conmod Pilot,Study 308 - Conmod Pilot
+210308,knb-lter-jrn.210308001.60,knb-lter-jrn,210308001,60,308,NA,Conmod Pilot,Study 308 - Conmod Pilot
+210308,knb-lter-jrn.210308004.12,knb-lter-jrn,210308004,12,308,NA,Conmod Pilot,Study 308 - Conmod Pilot
+210308,knb-lter-jrn.210308005.10,knb-lter-jrn,210308005,10,308,NA,Conmod Pilot,Study 308 - Conmod Pilot
+210308,knb-lter-jrn.210308003.2,knb-lter-jrn,210308003,2,308,NA,Conmod Pilot,Study 308 - Conmod Pilot
+210313,knb-lter-jrn.210313001.1,knb-lter-jrn,210313001,1,313,Tromble Weir: hydrology dynamics of a small watershed,Hydrology - Tromble Weir,Study 313 - Hydrology - Tromble Weir
+210327,knb-lter-jrn.210327001.1,knb-lter-jrn,210327001,1,327,"Greenfall decomposition of grass, yucca, Sporobolus, and LATR",NA,Study 327
+210328,knb-lter-jrn.210328001.4,knb-lter-jrn,210328001,4,328,Effect of long term manipulation of precipitation amount on ecosystem function,NA,Study 328
+210328,knb-lter-jrn.210328002.2,knb-lter-jrn,210328002,2,328,Effect of long term manipulation of precipitation amount on ecosystem function,NA,Study 328
+210328,knb-lter-jrn.210328003.5,knb-lter-jrn,210328003,5,328,Effect of long term manipulation of precipitation amount on ecosystem function,NA,Study 328
+210338,knb-lter-jrn.210338002.22,knb-lter-jrn,210338002,22,338,Watershed Characterization and Intensive Monitoring Study,NA,Study 338
+210338,knb-lter-jrn.210338006.2,knb-lter-jrn,210338006,2,338,Watershed Characterization and Intensive Monitoring Study,NA,Study 338
+210338,knb-lter-jrn.210338005.2,knb-lter-jrn,210338005,2,338,Watershed Characterization and Intensive Monitoring Study,NA,Study 338
+210338,knb-lter-jrn.210338004.19,knb-lter-jrn,210338004,19,338,Watershed Characterization and Intensive Monitoring Study,NA,Study 338
+210351,knb-lter-jrn.210351003.3,knb-lter-jrn,210351003,3,351,USDA Permanent Quadrats,USDA Permanent Quadrats,Study 351 - USDA Permanent Quadrats
+210351,knb-lter-jrn.210351004.2,knb-lter-jrn,210351004,2,351,USDA Permanent Quadrats,USDA Permanent Quadrats,Study 351 - USDA Permanent Quadrats
+210351,knb-lter-jrn.210351002.77,knb-lter-jrn,210351002,77,351,USDA Permanent Quadrats,USDA Permanent Quadrats,Study 351 - USDA Permanent Quadrats
+210351,knb-lter-jrn.210351001.49,knb-lter-jrn,210351001,49,351,USDA Permanent Quadrats,USDA Permanent Quadrats,Study 351 - USDA Permanent Quadrats
+210365,knb-lter-jrn.210365001.62,knb-lter-jrn,210365001,62,365,USDA Soil Movement Transect - 1500 feet running ENE,Soil Move,Study 365 - Soil Move
+210368,knb-lter-jrn.210368001.41,knb-lter-jrn,210368001,41,368,Variability in soils and vegetation associated with harvester ant (Pogonomyrmex rugosus) nests on a Chihuahuan Desert watershed,ANTS,Study 368 - ANTS
+210368,knb-lter-jrn.210368003.38,knb-lter-jrn,210368003,38,368,Variability in soils and vegetation associated with harvester ant (Pogonomyrmex rugosus) nests on a Chihuahuan Desert watershed,ANTS,Study 368 - ANTS
+210368,knb-lter-jrn.210368004.33,knb-lter-jrn,210368004,33,368,Variability in soils and vegetation associated with harvester ant (Pogonomyrmex rugosus) nests on a Chihuahuan Desert watershed,ANTS,Study 368 - ANTS
+210368,knb-lter-jrn.210368002.30,knb-lter-jrn,210368002,30,368,Variability in soils and vegetation associated with harvester ant (Pogonomyrmex rugosus) nests on a Chihuahuan Desert watershed,ANTS,Study 368 - ANTS
+210369,knb-lter-jrn.210369001.21,knb-lter-jrn,210369001,21,369,Arthropods from Lvar creosotebush,LARARTH,Study 369 - LARARTH
+210370,knb-lter-jrn.210370002.15,knb-lter-jrn,210370002,15,370,Jornada grasshoppers and vegetation,GRASSHOPV,Study 370 - GRASSHOPV
+210370,knb-lter-jrn.210370001.14,knb-lter-jrn,210370001,14,370,Jornada grasshoppers and vegetation,GRASSHOPV,Study 370 - GRASSHOPV
+210379,knb-lter-jrn.210379001.80,knb-lter-jrn,210379001,80,379,USDA JER NOAA CO-OP Climate Station at JER Headquarters,NA,Study 379
+210379,knb-lter-jrn.210379003.63,knb-lter-jrn,210379003,63,379,USDA JER NOAA CO-OP Climate Station at JER Headquarters,NA,Study 379
+210379,knb-lter-jrn.210379002.61,knb-lter-jrn,210379002,61,379,USDA JER NOAA CO-OP Climate Station at JER Headquarters,NA,Study 379
+210380,knb-lter-jrn.210380001.739,knb-lter-jrn,210380001,739,380,USDA JER standard rain gauge precipitation,NA,Study 380
+210385,knb-lter-jrn.210385003.12,knb-lter-jrn,210385003,12,385,Fluff grass: Microarthropod effects on nitrogen availability,FLUFGRAS,Study 385 - FLUFGRAS
+210385,knb-lter-jrn.210385007.34,knb-lter-jrn,210385007,34,385,Fluff grass: Microarthropod effects on nitrogen availability,FLUFGRAS,Study 385 - FLUFGRAS
+210385,knb-lter-jrn.210385005.34,knb-lter-jrn,210385005,34,385,Fluff grass: Microarthropod effects on nitrogen availability,FLUFGRAS,Study 385 - FLUFGRAS
+210385,knb-lter-jrn.210385001.26,knb-lter-jrn,210385001,26,385,Fluff grass: Microarthropod effects on nitrogen availability,FLUFGRAS,Study 385 - FLUFGRAS
+210385,knb-lter-jrn.210385008.17,knb-lter-jrn,210385008,17,385,Fluff grass: Microarthropod effects on nitrogen availability,FLUFGRAS,Study 385 - FLUFGRAS
+210385,knb-lter-jrn.210385006.41,knb-lter-jrn,210385006,41,385,Fluff grass: Microarthropod effects on nitrogen availability,FLUFGRAS,Study 385 - FLUFGRAS
+210385,knb-lter-jrn.210385002.49,knb-lter-jrn,210385002,49,385,Fluff grass: Microarthropod effects on nitrogen availability,FLUFGRAS,Study 385 - FLUFGRAS
+210385,knb-lter-jrn.210385004.24,knb-lter-jrn,210385004,24,385,Fluff grass: Microarthropod effects on nitrogen availability,FLUFGRAS,Study 385 - FLUFGRAS
+210386,knb-lter-jrn.210386011.1,knb-lter-jrn,210386011,1,386,Mesquite Phenology Study,MESQPHEN,Study 386 - MESQPHEN
+210386,knb-lter-jrn.210386009.1,knb-lter-jrn,210386009,1,386,Mesquite Phenology Study,MESQPHEN,Study 386 - MESQPHEN
+210386,knb-lter-jrn.210386003.11,knb-lter-jrn,210386003,11,386,Mesquite Phenology Study,MESQPHEN,Study 386 - MESQPHEN
+210386,knb-lter-jrn.210386004.12,knb-lter-jrn,210386004,12,386,Mesquite Phenology Study,MESQPHEN,Study 386 - MESQPHEN
+210386,knb-lter-jrn.210386008.1,knb-lter-jrn,210386008,1,386,Mesquite Phenology Study,MESQPHEN,Study 386 - MESQPHEN
+210386,knb-lter-jrn.210386002.1,knb-lter-jrn,210386002,1,386,Mesquite Phenology Study,MESQPHEN,Study 386 - MESQPHEN
+210389,knb-lter-jrn.210389002.2,knb-lter-jrn,210389002,2,389,LTER-I Transect Litter Collection Study,TRANFALL,Study 389 - TRANFALL
+210389,knb-lter-jrn.210389001.2,knb-lter-jrn,210389001,2,389,LTER-I Transect Litter Collection Study,TRANFALL,Study 389 - TRANFALL
+210392,knb-lter-jrn.210392001.69,knb-lter-jrn,210392001,69,392,Valentine creosotebush lagomorph exclosure study,NA,Study 392
+210394,knb-lter-jrn.210394009.40,knb-lter-jrn,210394009,40,394,Deep Mesquite Soil Cores in playas and arroyos,MESQSOIL,Study 394 - MESQSOIL
+210394,knb-lter-jrn.210394008.1,knb-lter-jrn,210394008,1,394,Deep Mesquite Soil Cores in playas and arroyos,MESQSOIL,Study 394 - MESQSOIL
+210394,knb-lter-jrn.210394005.49,knb-lter-jrn,210394005,49,394,Deep Mesquite Soil Cores in playas and arroyos,MESQSOIL,Study 394 - MESQSOIL
+210395,knb-lter-jrn.210395001.39,knb-lter-jrn,210395001,39,395,Grama/Mesquite Leaching Mineralization Potential Survey,GRMESMIN,Study 395 - GRMESMIN
+210398,knb-lter-jrn.210398002.2,knb-lter-jrn,210398002,2,398,Soil nutrient distribution in long-term NPP plots,NPPSCHEM,Study 398 - NPPSCHEM
+210398,knb-lter-jrn.210398001.2,knb-lter-jrn,210398001,2,398,Soil nutrient distribution in long-term NPP plots,NPPSCHEM,Study 398 - NPPSCHEM
+210407,knb-lter-jrn.210407001.5,knb-lter-jrn,210407001,5,407,USDA-ARS Jornada Experimental Range Recording (Weighing) Rain Gauges,NA,Study 407
+210408,knb-lter-jrn.210408005.3,knb-lter-jrn,210408005,3,408,Eddy flux tower,Bajada site,Study 408 - Bajada site
+210409,knb-lter-jrn.210409001.63,knb-lter-jrn,210409001,63,409,Ecophysiology measurements on Study 278 plots [Lara Reichmann/Osvaldo Sala],ECOPHYS-Throop,Study 409 - ECOPHYS-Throop
+210409,knb-lter-jrn.210409002.60,knb-lter-jrn,210409002,60,409,Ecophysiology measurements on Study 278 plots [Lara Reichmann/Osvaldo Sala],ECOPHYS-Throop,Study 409 - ECOPHYS-Throop
+210412,knb-lter-jrn.210412001.58,knb-lter-jrn,210412001,58,412,"Jornada Experimental Range annual stocking rates for cattle, horses, and sheep beginning 1916",NA,Study 412
+210420,knb-lter-jrn.210420002.1,knb-lter-jrn,210420002,1,420,Geomorphic Controls over Nutrient Cycling in Playas in the Jornada Basin,NA,Study 420
+210420,knb-lter-jrn.210420001.1,knb-lter-jrn,210420001,1,420,Geomorphic Controls over Nutrient Cycling in Playas in the Jornada Basin,NA,Study 420
+210425,knb-lter-jrn.210425001.75,knb-lter-jrn,210425001,75,425,Synthesis: Estimate of daily precipitation at 15 NPP sites for 2000-2010 based on existing precipitation data sets,NA,Study 425
+210437,knb-lter-jrn.210437032.28,knb-lter-jrn,210437032,28,437,NPP site instrumentation on a wireless network,NPP met stations,Study 437 - NPP met stations
+210437,knb-lter-jrn.210437016.28,knb-lter-jrn,210437016,28,437,NPP site instrumentation on a wireless network,NPP met stations,Study 437 - NPP met stations
+210437,knb-lter-jrn.210437001.28,knb-lter-jrn,210437001,28,437,NPP site instrumentation on a wireless network,NPP met stations,Study 437 - NPP met stations
+210437,knb-lter-jrn.210437061.26,knb-lter-jrn,210437061,26,437,NPP site instrumentation on a wireless network,NPP met stations,Study 437 - NPP met stations
+210437,knb-lter-jrn.210437076.28,knb-lter-jrn,210437076,28,437,NPP site instrumentation on a wireless network,NPP met stations,Study 437 - NPP met stations
+210437,knb-lter-jrn.210437002.29,knb-lter-jrn,210437002,29,437,NPP site instrumentation on a wireless network,NPP met stations,Study 437 - NPP met stations
+210437,knb-lter-jrn.210437033.28,knb-lter-jrn,210437033,28,437,NPP site instrumentation on a wireless network,NPP met stations,Study 437 - NPP met stations
+210437,knb-lter-jrn.210437091.28,knb-lter-jrn,210437091,28,437,NPP site instrumentation on a wireless network,NPP met stations,Study 437 - NPP met stations
+210437,knb-lter-jrn.210437031.28,knb-lter-jrn,210437031,28,437,NPP site instrumentation on a wireless network,NPP met stations,Study 437 - NPP met stations
+210437,knb-lter-jrn.210437063.26,knb-lter-jrn,210437063,26,437,NPP site instrumentation on a wireless network,NPP met stations,Study 437 - NPP met stations
+210437,knb-lter-jrn.210437062.25,knb-lter-jrn,210437062,25,437,NPP site instrumentation on a wireless network,NPP met stations,Study 437 - NPP met stations
+210437,knb-lter-jrn.210437092.28,knb-lter-jrn,210437092,28,437,NPP site instrumentation on a wireless network,NPP met stations,Study 437 - NPP met stations
+210437,knb-lter-jrn.210437046.29,knb-lter-jrn,210437046,29,437,NPP site instrumentation on a wireless network,NPP met stations,Study 437 - NPP met stations
+210437,knb-lter-jrn.210437047.28,knb-lter-jrn,210437047,28,437,NPP site instrumentation on a wireless network,NPP met stations,Study 437 - NPP met stations
+210437,knb-lter-jrn.210437017.28,knb-lter-jrn,210437017,28,437,NPP site instrumentation on a wireless network,NPP met stations,Study 437 - NPP met stations
+210437,knb-lter-jrn.210437049.28,knb-lter-jrn,210437049,28,437,NPP site instrumentation on a wireless network,NPP met stations,Study 437 - NPP met stations
+210437,knb-lter-jrn.210437019.28,knb-lter-jrn,210437019,28,437,NPP site instrumentation on a wireless network,NPP met stations,Study 437 - NPP met stations
+210437,knb-lter-jrn.210437064.27,knb-lter-jrn,210437064,27,437,NPP site instrumentation on a wireless network,NPP met stations,Study 437 - NPP met stations
+210437,knb-lter-jrn.210437093.28,knb-lter-jrn,210437093,28,437,NPP site instrumentation on a wireless network,NPP met stations,Study 437 - NPP met stations
+210437,knb-lter-jrn.210437079.28,knb-lter-jrn,210437079,28,437,NPP site instrumentation on a wireless network,NPP met stations,Study 437 - NPP met stations
+210437,knb-lter-jrn.210437048.28,knb-lter-jrn,210437048,28,437,NPP site instrumentation on a wireless network,NPP met stations,Study 437 - NPP met stations
+210437,knb-lter-jrn.210437018.28,knb-lter-jrn,210437018,28,437,NPP site instrumentation on a wireless network,NPP met stations,Study 437 - NPP met stations
+210437,knb-lter-jrn.210437106.25,knb-lter-jrn,210437106,25,437,NPP site instrumentation on a wireless network,NPP met stations,Study 437 - NPP met stations
+210437,knb-lter-jrn.210437035.26,knb-lter-jrn,210437035,26,437,NPP site instrumentation on a wireless network,NPP met stations,Study 437 - NPP met stations
+210437,knb-lter-jrn.210437050.26,knb-lter-jrn,210437050,26,437,NPP site instrumentation on a wireless network,NPP met stations,Study 437 - NPP met stations
+210437,knb-lter-jrn.210437020.26,knb-lter-jrn,210437020,26,437,NPP site instrumentation on a wireless network,NPP met stations,Study 437 - NPP met stations
+210437,knb-lter-jrn.210437065.26,knb-lter-jrn,210437065,26,437,NPP site instrumentation on a wireless network,NPP met stations,Study 437 - NPP met stations
+210437,knb-lter-jrn.210437034.28,knb-lter-jrn,210437034,28,437,NPP site instrumentation on a wireless network,NPP met stations,Study 437 - NPP met stations
+210437,knb-lter-jrn.210437080.27,knb-lter-jrn,210437080,27,437,NPP site instrumentation on a wireless network,NPP met stations,Study 437 - NPP met stations
+210437,knb-lter-jrn.210437005.26,knb-lter-jrn,210437005,26,437,NPP site instrumentation on a wireless network,NPP met stations,Study 437 - NPP met stations
+210437,knb-lter-jrn.210437036.27,knb-lter-jrn,210437036,27,437,NPP site instrumentation on a wireless network,NPP met stations,Study 437 - NPP met stations
+210437,knb-lter-jrn.210437051.25,knb-lter-jrn,210437051,25,437,NPP site instrumentation on a wireless network,NPP met stations,Study 437 - NPP met stations
+210437,knb-lter-jrn.210437021.27,knb-lter-jrn,210437021,27,437,NPP site instrumentation on a wireless network,NPP met stations,Study 437 - NPP met stations
+210437,knb-lter-jrn.210437066.25,knb-lter-jrn,210437066,25,437,NPP site instrumentation on a wireless network,NPP met stations,Study 437 - NPP met stations
+210437,knb-lter-jrn.210437095.27,knb-lter-jrn,210437095,27,437,NPP site instrumentation on a wireless network,NPP met stations,Study 437 - NPP met stations
+210437,knb-lter-jrn.210437096.27,knb-lter-jrn,210437096,27,437,NPP site instrumentation on a wireless network,NPP met stations,Study 437 - NPP met stations
+210437,knb-lter-jrn.210437081.27,knb-lter-jrn,210437081,27,437,NPP site instrumentation on a wireless network,NPP met stations,Study 437 - NPP met stations
+210437,knb-lter-jrn.210437006.27,knb-lter-jrn,210437006,27,437,NPP site instrumentation on a wireless network,NPP met stations,Study 437 - NPP met stations
+210437,knb-lter-jrn.210437067.24,knb-lter-jrn,210437067,24,437,NPP site instrumentation on a wireless network,NPP met stations,Study 437 - NPP met stations
+210437,knb-lter-jrn.210437037.27,knb-lter-jrn,210437037,27,437,NPP site instrumentation on a wireless network,NPP met stations,Study 437 - NPP met stations
+210437,knb-lter-jrn.210437052.27,knb-lter-jrn,210437052,27,437,NPP site instrumentation on a wireless network,NPP met stations,Study 437 - NPP met stations
+210437,knb-lter-jrn.210437097.27,knb-lter-jrn,210437097,27,437,NPP site instrumentation on a wireless network,NPP met stations,Study 437 - NPP met stations
+210437,knb-lter-jrn.210437022.27,knb-lter-jrn,210437022,27,437,NPP site instrumentation on a wireless network,NPP met stations,Study 437 - NPP met stations
+210437,knb-lter-jrn.210437082.27,knb-lter-jrn,210437082,27,437,NPP site instrumentation on a wireless network,NPP met stations,Study 437 - NPP met stations
+210437,knb-lter-jrn.210437008.27,knb-lter-jrn,210437008,27,437,NPP site instrumentation on a wireless network,NPP met stations,Study 437 - NPP met stations
+210437,knb-lter-jrn.210437007.27,knb-lter-jrn,210437007,27,437,NPP site instrumentation on a wireless network,NPP met stations,Study 437 - NPP met stations
+210437,knb-lter-jrn.210437038.27,knb-lter-jrn,210437038,27,437,NPP site instrumentation on a wireless network,NPP met stations,Study 437 - NPP met stations
+210437,knb-lter-jrn.210437053.27,knb-lter-jrn,210437053,27,437,NPP site instrumentation on a wireless network,NPP met stations,Study 437 - NPP met stations
+210437,knb-lter-jrn.210437023.27,knb-lter-jrn,210437023,27,437,NPP site instrumentation on a wireless network,NPP met stations,Study 437 - NPP met stations
+210437,knb-lter-jrn.210437039.26,knb-lter-jrn,210437039,26,437,NPP site instrumentation on a wireless network,NPP met stations,Study 437 - NPP met stations
+210437,knb-lter-jrn.210437068.25,knb-lter-jrn,210437068,25,437,NPP site instrumentation on a wireless network,NPP met stations,Study 437 - NPP met stations
+210437,knb-lter-jrn.210437098.27,knb-lter-jrn,210437098,27,437,NPP site instrumentation on a wireless network,NPP met stations,Study 437 - NPP met stations
+210437,knb-lter-jrn.210437077.28,knb-lter-jrn,210437077,28,437,NPP site instrumentation on a wireless network,NPP met stations,Study 437 - NPP met stations
+210437,knb-lter-jrn.210437003.28,knb-lter-jrn,210437003,28,437,NPP site instrumentation on a wireless network,NPP met stations,Study 437 - NPP met stations
+210437,knb-lter-jrn.210437084.27,knb-lter-jrn,210437084,27,437,NPP site instrumentation on a wireless network,NPP met stations,Study 437 - NPP met stations
+210437,knb-lter-jrn.210437083.27,knb-lter-jrn,210437083,27,437,NPP site instrumentation on a wireless network,NPP met stations,Study 437 - NPP met stations
+210437,knb-lter-jrn.210437009.27,knb-lter-jrn,210437009,27,437,NPP site instrumentation on a wireless network,NPP met stations,Study 437 - NPP met stations
+210437,knb-lter-jrn.210437010.27,knb-lter-jrn,210437010,27,437,NPP site instrumentation on a wireless network,NPP met stations,Study 437 - NPP met stations
+210437,knb-lter-jrn.210437043.27,knb-lter-jrn,210437043,27,437,NPP site instrumentation on a wireless network,NPP met stations,Study 437 - NPP met stations
+210437,knb-lter-jrn.210437058.27,knb-lter-jrn,210437058,27,437,NPP site instrumentation on a wireless network,NPP met stations,Study 437 - NPP met stations
+210437,knb-lter-jrn.210437078.28,knb-lter-jrn,210437078,28,437,NPP site instrumentation on a wireless network,NPP met stations,Study 437 - NPP met stations
+210437,knb-lter-jrn.210437004.28,knb-lter-jrn,210437004,28,437,NPP site instrumentation on a wireless network,NPP met stations,Study 437 - NPP met stations
+210437,knb-lter-jrn.210437102.27,knb-lter-jrn,210437102,27,437,NPP site instrumentation on a wireless network,NPP met stations,Study 437 - NPP met stations
+210437,knb-lter-jrn.210437103.27,knb-lter-jrn,210437103,27,437,NPP site instrumentation on a wireless network,NPP met stations,Study 437 - NPP met stations
+210437,knb-lter-jrn.210437087.27,knb-lter-jrn,210437087,27,437,NPP site instrumentation on a wireless network,NPP met stations,Study 437 - NPP met stations
+210437,knb-lter-jrn.210437088.27,knb-lter-jrn,210437088,27,437,NPP site instrumentation on a wireless network,NPP met stations,Study 437 - NPP met stations
+210437,knb-lter-jrn.210437013.27,knb-lter-jrn,210437013,27,437,NPP site instrumentation on a wireless network,NPP met stations,Study 437 - NPP met stations
+210437,knb-lter-jrn.210437094.28,knb-lter-jrn,210437094,28,437,NPP site instrumentation on a wireless network,NPP met stations,Study 437 - NPP met stations
+210437,knb-lter-jrn.210437059.27,knb-lter-jrn,210437059,27,437,NPP site instrumentation on a wireless network,NPP met stations,Study 437 - NPP met stations
+210437,knb-lter-jrn.210437029.27,knb-lter-jrn,210437029,27,437,NPP site instrumentation on a wireless network,NPP met stations,Study 437 - NPP met stations
+210437,knb-lter-jrn.210437104.27,knb-lter-jrn,210437104,27,437,NPP site instrumentation on a wireless network,NPP met stations,Study 437 - NPP met stations
+210437,knb-lter-jrn.210437089.27,knb-lter-jrn,210437089,27,437,NPP site instrumentation on a wireless network,NPP met stations,Study 437 - NPP met stations
+210437,knb-lter-jrn.210437014.27,knb-lter-jrn,210437014,27,437,NPP site instrumentation on a wireless network,NPP met stations,Study 437 - NPP met stations
+210437,knb-lter-jrn.210437015.27,knb-lter-jrn,210437015,27,437,NPP site instrumentation on a wireless network,NPP met stations,Study 437 - NPP met stations
+210437,knb-lter-jrn.210437045.26,knb-lter-jrn,210437045,26,437,NPP site instrumentation on a wireless network,NPP met stations,Study 437 - NPP met stations
+210437,knb-lter-jrn.210437060.27,knb-lter-jrn,210437060,27,437,NPP site instrumentation on a wireless network,NPP met stations,Study 437 - NPP met stations
+210437,knb-lter-jrn.210437030.26,knb-lter-jrn,210437030,26,437,NPP site instrumentation on a wireless network,NPP met stations,Study 437 - NPP met stations
+210437,knb-lter-jrn.210437074.25,knb-lter-jrn,210437074,25,437,NPP site instrumentation on a wireless network,NPP met stations,Study 437 - NPP met stations
+210437,knb-lter-jrn.210437075.25,knb-lter-jrn,210437075,25,437,NPP site instrumentation on a wireless network,NPP met stations,Study 437 - NPP met stations
+210437,knb-lter-jrn.210437105.27,knb-lter-jrn,210437105,27,437,NPP site instrumentation on a wireless network,NPP met stations,Study 437 - NPP met stations
+210437,knb-lter-jrn.210437090.27,knb-lter-jrn,210437090,27,437,NPP site instrumentation on a wireless network,NPP met stations,Study 437 - NPP met stations
+210437,knb-lter-jrn.210437107.15,knb-lter-jrn,210437107,15,437,NPP site instrumentation on a wireless network,NPP met stations,Study 437 - NPP met stations
+210437,knb-lter-jrn.210437110.15,knb-lter-jrn,210437110,15,437,NPP site instrumentation on a wireless network,NPP met stations,Study 437 - NPP met stations
+210437,knb-lter-jrn.210437112.15,knb-lter-jrn,210437112,15,437,NPP site instrumentation on a wireless network,NPP met stations,Study 437 - NPP met stations
+210437,knb-lter-jrn.210437113.15,knb-lter-jrn,210437113,15,437,NPP site instrumentation on a wireless network,NPP met stations,Study 437 - NPP met stations
+210437,knb-lter-jrn.210437108.15,knb-lter-jrn,210437108,15,437,NPP site instrumentation on a wireless network,NPP met stations,Study 437 - NPP met stations
+210437,knb-lter-jrn.210437109.15,knb-lter-jrn,210437109,15,437,NPP site instrumentation on a wireless network,NPP met stations,Study 437 - NPP met stations
+210437,knb-lter-jrn.210437115.15,knb-lter-jrn,210437115,15,437,NPP site instrumentation on a wireless network,NPP met stations,Study 437 - NPP met stations
+210437,knb-lter-jrn.210437114.15,knb-lter-jrn,210437114,15,437,NPP site instrumentation on a wireless network,NPP met stations,Study 437 - NPP met stations
+210437,knb-lter-jrn.210437054.27,knb-lter-jrn,210437054,27,437,NPP site instrumentation on a wireless network,NPP met stations,Study 437 - NPP met stations
+210437,knb-lter-jrn.210437024.27,knb-lter-jrn,210437024,27,437,NPP site instrumentation on a wireless network,NPP met stations,Study 437 - NPP met stations
+210437,knb-lter-jrn.210437025.27,knb-lter-jrn,210437025,27,437,NPP site instrumentation on a wireless network,NPP met stations,Study 437 - NPP met stations
+210437,knb-lter-jrn.210437069.25,knb-lter-jrn,210437069,25,437,NPP site instrumentation on a wireless network,NPP met stations,Study 437 - NPP met stations
+210437,knb-lter-jrn.210437099.27,knb-lter-jrn,210437099,27,437,NPP site instrumentation on a wireless network,NPP met stations,Study 437 - NPP met stations
+210437,knb-lter-jrn.210437044.27,knb-lter-jrn,210437044,27,437,NPP site instrumentation on a wireless network,NPP met stations,Study 437 - NPP met stations
+210437,knb-lter-jrn.210437027.27,knb-lter-jrn,210437027,27,437,NPP site instrumentation on a wireless network,NPP met stations,Study 437 - NPP met stations
+210437,knb-lter-jrn.210437072.25,knb-lter-jrn,210437072,25,437,NPP site instrumentation on a wireless network,NPP met stations,Study 437 - NPP met stations
+210437,knb-lter-jrn.210437071.24,knb-lter-jrn,210437071,24,437,NPP site instrumentation on a wireless network,NPP met stations,Study 437 - NPP met stations
+210437,knb-lter-jrn.210437040.28,knb-lter-jrn,210437040,28,437,NPP site instrumentation on a wireless network,NPP met stations,Study 437 - NPP met stations
+210437,knb-lter-jrn.210437041.27,knb-lter-jrn,210437041,27,437,NPP site instrumentation on a wireless network,NPP met stations,Study 437 - NPP met stations
+210437,knb-lter-jrn.210437028.27,knb-lter-jrn,210437028,27,437,NPP site instrumentation on a wireless network,NPP met stations,Study 437 - NPP met stations
+210437,knb-lter-jrn.210437073.25,knb-lter-jrn,210437073,25,437,NPP site instrumentation on a wireless network,NPP met stations,Study 437 - NPP met stations
+210437,knb-lter-jrn.210437026.27,knb-lter-jrn,210437026,27,437,NPP site instrumentation on a wireless network,NPP met stations,Study 437 - NPP met stations
+210437,knb-lter-jrn.210437070.24,knb-lter-jrn,210437070,24,437,NPP site instrumentation on a wireless network,NPP met stations,Study 437 - NPP met stations
+210437,knb-lter-jrn.210437100.28,knb-lter-jrn,210437100,28,437,NPP site instrumentation on a wireless network,NPP met stations,Study 437 - NPP met stations
+210437,knb-lter-jrn.210437085.28,knb-lter-jrn,210437085,28,437,NPP site instrumentation on a wireless network,NPP met stations,Study 437 - NPP met stations
+210437,knb-lter-jrn.210437042.27,knb-lter-jrn,210437042,27,437,NPP site instrumentation on a wireless network,NPP met stations,Study 437 - NPP met stations
+210437,knb-lter-jrn.210437101.27,knb-lter-jrn,210437101,27,437,NPP site instrumentation on a wireless network,NPP met stations,Study 437 - NPP met stations
+210437,knb-lter-jrn.210437057.27,knb-lter-jrn,210437057,27,437,NPP site instrumentation on a wireless network,NPP met stations,Study 437 - NPP met stations
+210437,knb-lter-jrn.210437012.27,knb-lter-jrn,210437012,27,437,NPP site instrumentation on a wireless network,NPP met stations,Study 437 - NPP met stations
+210437,knb-lter-jrn.210437011.29,knb-lter-jrn,210437011,29,437,NPP site instrumentation on a wireless network,NPP met stations,Study 437 - NPP met stations
+210437,knb-lter-jrn.210437111.15,knb-lter-jrn,210437111,15,437,NPP site instrumentation on a wireless network,NPP met stations,Study 437 - NPP met stations
+210437,knb-lter-jrn.210437086.27,knb-lter-jrn,210437086,27,437,NPP site instrumentation on a wireless network,NPP met stations,Study 437 - NPP met stations
+210437,knb-lter-jrn.210437117.15,knb-lter-jrn,210437117,15,437,NPP site instrumentation on a wireless network,NPP met stations,Study 437 - NPP met stations
+210437,knb-lter-jrn.210437118.15,knb-lter-jrn,210437118,15,437,NPP site instrumentation on a wireless network,NPP met stations,Study 437 - NPP met stations
+210437,knb-lter-jrn.210437055.28,knb-lter-jrn,210437055,28,437,NPP site instrumentation on a wireless network,NPP met stations,Study 437 - NPP met stations
+210437,knb-lter-jrn.210437116.15,knb-lter-jrn,210437116,15,437,NPP site instrumentation on a wireless network,NPP met stations,Study 437 - NPP met stations
+210437,knb-lter-jrn.210437119.15,knb-lter-jrn,210437119,15,437,NPP site instrumentation on a wireless network,NPP met stations,Study 437 - NPP met stations
+210437,knb-lter-jrn.210437120.14,knb-lter-jrn,210437120,14,437,NPP site instrumentation on a wireless network,NPP met stations,Study 437 - NPP met stations
+210437,knb-lter-jrn.210437056.27,knb-lter-jrn,210437056,27,437,NPP site instrumentation on a wireless network,NPP met stations,Study 437 - NPP met stations
+210461,knb-lter-jrn.210461001.17,knb-lter-jrn,210461001,17,461,Multiple Stressor Experiment II (MSE-II): Effect of multiple stressors (grazing and shrub removal) on decline and recovery of perennial grasses in a black grama-mesquite savanna on sandy soils,NA,Study 461
+210469,knb-lter-jrn.210469001.1,knb-lter-jrn,210469001,1,469,Woody-plant encroachment in Southwestern rangelands: Mechanisms of invasion and opportunities of containment,NA,Study 469
+210472,knb-lter-jrn.210472001.1,knb-lter-jrn,210472001,1,472,Grazing Management Effects on Carbon Sequestration in Rangelands,NA,Study 472
+210493,knb-lter-jrn.210493001.1,knb-lter-jrn,210493001,1,493,Microfauna in soil biocrust in grass and shrub dominated sites,NA,Study 493
+210500,knb-lter-jrn.210500001.1,knb-lter-jrn,210500001,1,500,Seedling establishment on winnowed vs. unwinnowed soils,NA,Study 500
+210520,knb-lter-jrn.210520001.1,knb-lter-jrn,210520001,1,520,Jornada LTER plant species list,NA,Study 520
+210548,knb-lter-jrn.210548043.24,knb-lter-jrn,210548043,24,548,CSIS instrumentation on a wireless network,CSIS met stations,Study 548 - CSIS met stations
+210548,knb-lter-jrn.210548057.24,knb-lter-jrn,210548057,24,548,CSIS instrumentation on a wireless network,CSIS met stations,Study 548 - CSIS met stations
+210548,knb-lter-jrn.210548042.24,knb-lter-jrn,210548042,24,548,CSIS instrumentation on a wireless network,CSIS met stations,Study 548 - CSIS met stations
+210548,knb-lter-jrn.210548028.25,knb-lter-jrn,210548028,25,548,CSIS instrumentation on a wireless network,CSIS met stations,Study 548 - CSIS met stations
+210548,knb-lter-jrn.210548011.25,knb-lter-jrn,210548011,25,548,CSIS instrumentation on a wireless network,CSIS met stations,Study 548 - CSIS met stations
+210548,knb-lter-jrn.210548029.23,knb-lter-jrn,210548029,23,548,CSIS instrumentation on a wireless network,CSIS met stations,Study 548 - CSIS met stations
+210548,knb-lter-jrn.210548071.24,knb-lter-jrn,210548071,24,548,CSIS instrumentation on a wireless network,CSIS met stations,Study 548 - CSIS met stations
+210548,knb-lter-jrn.210548041.24,knb-lter-jrn,210548041,24,548,CSIS instrumentation on a wireless network,CSIS met stations,Study 548 - CSIS met stations
+210548,knb-lter-jrn.210548058.24,knb-lter-jrn,210548058,24,548,CSIS instrumentation on a wireless network,CSIS met stations,Study 548 - CSIS met stations
+210548,knb-lter-jrn.210548073.25,knb-lter-jrn,210548073,25,548,CSIS instrumentation on a wireless network,CSIS met stations,Study 548 - CSIS met stations
+210548,knb-lter-jrn.210548044.23,knb-lter-jrn,210548044,23,548,CSIS instrumentation on a wireless network,CSIS met stations,Study 548 - CSIS met stations
+210548,knb-lter-jrn.210548100.22,knb-lter-jrn,210548100,22,548,CSIS instrumentation on a wireless network,CSIS met stations,Study 548 - CSIS met stations
+210548,knb-lter-jrn.210548060.23,knb-lter-jrn,210548060,23,548,CSIS instrumentation on a wireless network,CSIS met stations,Study 548 - CSIS met stations
+210548,knb-lter-jrn.210548016.24,knb-lter-jrn,210548016,24,548,CSIS instrumentation on a wireless network,CSIS met stations,Study 548 - CSIS met stations
+210548,knb-lter-jrn.210548086.24,knb-lter-jrn,210548086,24,548,CSIS instrumentation on a wireless network,CSIS met stations,Study 548 - CSIS met stations
+210548,knb-lter-jrn.210548001.24,knb-lter-jrn,210548001,24,548,CSIS instrumentation on a wireless network,CSIS met stations,Study 548 - CSIS met stations
+210548,knb-lter-jrn.210548090.23,knb-lter-jrn,210548090,23,548,CSIS instrumentation on a wireless network,CSIS met stations,Study 548 - CSIS met stations
+210548,knb-lter-jrn.210548061.25,knb-lter-jrn,210548061,25,548,CSIS instrumentation on a wireless network,CSIS met stations,Study 548 - CSIS met stations
+210548,knb-lter-jrn.210548013.24,knb-lter-jrn,210548013,24,548,CSIS instrumentation on a wireless network,CSIS met stations,Study 548 - CSIS met stations
+210548,knb-lter-jrn.210548012.24,knb-lter-jrn,210548012,24,548,CSIS instrumentation on a wireless network,CSIS met stations,Study 548 - CSIS met stations
+210548,knb-lter-jrn.210548014.23,knb-lter-jrn,210548014,23,548,CSIS instrumentation on a wireless network,CSIS met stations,Study 548 - CSIS met stations
+210548,knb-lter-jrn.210548088.24,knb-lter-jrn,210548088,24,548,CSIS instrumentation on a wireless network,CSIS met stations,Study 548 - CSIS met stations
+210548,knb-lter-jrn.210548059.23,knb-lter-jrn,210548059,23,548,CSIS instrumentation on a wireless network,CSIS met stations,Study 548 - CSIS met stations
+210548,knb-lter-jrn.210548074.23,knb-lter-jrn,210548074,23,548,CSIS instrumentation on a wireless network,CSIS met stations,Study 548 - CSIS met stations
+210548,knb-lter-jrn.210548101.21,knb-lter-jrn,210548101,21,548,CSIS instrumentation on a wireless network,CSIS met stations,Study 548 - CSIS met stations
+210548,knb-lter-jrn.210548015.23,knb-lter-jrn,210548015,23,548,CSIS instrumentation on a wireless network,CSIS met stations,Study 548 - CSIS met stations
+210548,knb-lter-jrn.210548089.23,knb-lter-jrn,210548089,23,548,CSIS instrumentation on a wireless network,CSIS met stations,Study 548 - CSIS met stations
+210548,knb-lter-jrn.210548031.24,knb-lter-jrn,210548031,24,548,CSIS instrumentation on a wireless network,CSIS met stations,Study 548 - CSIS met stations
+210548,knb-lter-jrn.210548102.20,knb-lter-jrn,210548102,20,548,CSIS instrumentation on a wireless network,CSIS met stations,Study 548 - CSIS met stations
+210548,knb-lter-jrn.210548055.24,knb-lter-jrn,210548055,24,548,CSIS instrumentation on a wireless network,CSIS met stations,Study 548 - CSIS met stations
+210548,knb-lter-jrn.210548025.24,knb-lter-jrn,210548025,24,548,CSIS instrumentation on a wireless network,CSIS met stations,Study 548 - CSIS met stations
+210548,knb-lter-jrn.210548040.24,knb-lter-jrn,210548040,24,548,CSIS instrumentation on a wireless network,CSIS met stations,Study 548 - CSIS met stations
+210548,knb-lter-jrn.210548010.23,knb-lter-jrn,210548010,23,548,CSIS instrumentation on a wireless network,CSIS met stations,Study 548 - CSIS met stations
+210548,knb-lter-jrn.210548085.24,knb-lter-jrn,210548085,24,548,CSIS instrumentation on a wireless network,CSIS met stations,Study 548 - CSIS met stations
+210548,knb-lter-jrn.210548070.25,knb-lter-jrn,210548070,25,548,CSIS instrumentation on a wireless network,CSIS met stations,Study 548 - CSIS met stations
+210548,knb-lter-jrn.210548099.22,knb-lter-jrn,210548099,22,548,CSIS instrumentation on a wireless network,CSIS met stations,Study 548 - CSIS met stations
+210548,knb-lter-jrn.210548056.24,knb-lter-jrn,210548056,24,548,CSIS instrumentation on a wireless network,CSIS met stations,Study 548 - CSIS met stations
+210548,knb-lter-jrn.210548026.24,knb-lter-jrn,210548026,24,548,CSIS instrumentation on a wireless network,CSIS met stations,Study 548 - CSIS met stations
+210548,knb-lter-jrn.210548027.24,knb-lter-jrn,210548027,24,548,CSIS instrumentation on a wireless network,CSIS met stations,Study 548 - CSIS met stations
+210548,knb-lter-jrn.210548081.23,knb-lter-jrn,210548081,23,548,CSIS instrumentation on a wireless network,CSIS met stations,Study 548 - CSIS met stations
+210548,knb-lter-jrn.210548066.23,knb-lter-jrn,210548066,23,548,CSIS instrumentation on a wireless network,CSIS met stations,Study 548 - CSIS met stations
+210548,knb-lter-jrn.210548017.24,knb-lter-jrn,210548017,24,548,CSIS instrumentation on a wireless network,CSIS met stations,Study 548 - CSIS met stations
+210548,knb-lter-jrn.210548046.24,knb-lter-jrn,210548046,24,548,CSIS instrumentation on a wireless network,CSIS met stations,Study 548 - CSIS met stations
+210548,knb-lter-jrn.210548032.24,knb-lter-jrn,210548032,24,548,CSIS instrumentation on a wireless network,CSIS met stations,Study 548 - CSIS met stations
+210548,knb-lter-jrn.210548002.23,knb-lter-jrn,210548002,23,548,CSIS instrumentation on a wireless network,CSIS met stations,Study 548 - CSIS met stations
+210548,knb-lter-jrn.210548076.24,knb-lter-jrn,210548076,24,548,CSIS instrumentation on a wireless network,CSIS met stations,Study 548 - CSIS met stations
+210548,knb-lter-jrn.210548062.23,knb-lter-jrn,210548062,23,548,CSIS instrumentation on a wireless network,CSIS met stations,Study 548 - CSIS met stations
+210548,knb-lter-jrn.210548103.21,knb-lter-jrn,210548103,21,548,CSIS instrumentation on a wireless network,CSIS met stations,Study 548 - CSIS met stations
+210548,knb-lter-jrn.210548047.23,knb-lter-jrn,210548047,23,548,CSIS instrumentation on a wireless network,CSIS met stations,Study 548 - CSIS met stations
+210548,knb-lter-jrn.210548018.23,knb-lter-jrn,210548018,23,548,CSIS instrumentation on a wireless network,CSIS met stations,Study 548 - CSIS met stations
+210548,knb-lter-jrn.210548033.23,knb-lter-jrn,210548033,23,548,CSIS instrumentation on a wireless network,CSIS met stations,Study 548 - CSIS met stations
+210548,knb-lter-jrn.210548003.23,knb-lter-jrn,210548003,23,548,CSIS instrumentation on a wireless network,CSIS met stations,Study 548 - CSIS met stations
+210548,knb-lter-jrn.210548077.23,knb-lter-jrn,210548077,23,548,CSIS instrumentation on a wireless network,CSIS met stations,Study 548 - CSIS met stations
+210548,knb-lter-jrn.210548078.23,knb-lter-jrn,210548078,23,548,CSIS instrumentation on a wireless network,CSIS met stations,Study 548 - CSIS met stations
+210548,knb-lter-jrn.210548063.23,knb-lter-jrn,210548063,23,548,CSIS instrumentation on a wireless network,CSIS met stations,Study 548 - CSIS met stations
+210548,knb-lter-jrn.210548048.23,knb-lter-jrn,210548048,23,548,CSIS instrumentation on a wireless network,CSIS met stations,Study 548 - CSIS met stations
+210548,knb-lter-jrn.210548019.23,knb-lter-jrn,210548019,23,548,CSIS instrumentation on a wireless network,CSIS met stations,Study 548 - CSIS met stations
+210548,knb-lter-jrn.210548034.23,knb-lter-jrn,210548034,23,548,CSIS instrumentation on a wireless network,CSIS met stations,Study 548 - CSIS met stations
+210548,knb-lter-jrn.210548004.23,knb-lter-jrn,210548004,23,548,CSIS instrumentation on a wireless network,CSIS met stations,Study 548 - CSIS met stations
+210548,knb-lter-jrn.210548079.23,knb-lter-jrn,210548079,23,548,CSIS instrumentation on a wireless network,CSIS met stations,Study 548 - CSIS met stations
+210548,knb-lter-jrn.210548087.23,knb-lter-jrn,210548087,23,548,CSIS instrumentation on a wireless network,CSIS met stations,Study 548 - CSIS met stations
+210548,knb-lter-jrn.210548072.24,knb-lter-jrn,210548072,24,548,CSIS instrumentation on a wireless network,CSIS met stations,Study 548 - CSIS met stations
+210548,knb-lter-jrn.210548092.20,knb-lter-jrn,210548092,20,548,CSIS instrumentation on a wireless network,CSIS met stations,Study 548 - CSIS met stations
+210548,knb-lter-jrn.210548030.23,knb-lter-jrn,210548030,23,548,CSIS instrumentation on a wireless network,CSIS met stations,Study 548 - CSIS met stations
+210548,knb-lter-jrn.210548045.23,knb-lter-jrn,210548045,23,548,CSIS instrumentation on a wireless network,CSIS met stations,Study 548 - CSIS met stations
+210548,knb-lter-jrn.210548035.23,knb-lter-jrn,210548035,23,548,CSIS instrumentation on a wireless network,CSIS met stations,Study 548 - CSIS met stations
+210548,knb-lter-jrn.210548005.24,knb-lter-jrn,210548005,24,548,CSIS instrumentation on a wireless network,CSIS met stations,Study 548 - CSIS met stations
+210548,knb-lter-jrn.210548075.23,knb-lter-jrn,210548075,23,548,CSIS instrumentation on a wireless network,CSIS met stations,Study 548 - CSIS met stations
+210548,knb-lter-jrn.210548065.23,knb-lter-jrn,210548065,23,548,CSIS instrumentation on a wireless network,CSIS met stations,Study 548 - CSIS met stations
+210548,knb-lter-jrn.210548093.20,knb-lter-jrn,210548093,20,548,CSIS instrumentation on a wireless network,CSIS met stations,Study 548 - CSIS met stations
+210548,knb-lter-jrn.210548050.23,knb-lter-jrn,210548050,23,548,CSIS instrumentation on a wireless network,CSIS met stations,Study 548 - CSIS met stations
+210548,knb-lter-jrn.210548021.23,knb-lter-jrn,210548021,23,548,CSIS instrumentation on a wireless network,CSIS met stations,Study 548 - CSIS met stations
+210548,knb-lter-jrn.210548036.23,knb-lter-jrn,210548036,23,548,CSIS instrumentation on a wireless network,CSIS met stations,Study 548 - CSIS met stations
+210548,knb-lter-jrn.210548006.23,knb-lter-jrn,210548006,23,548,CSIS instrumentation on a wireless network,CSIS met stations,Study 548 - CSIS met stations
+210548,knb-lter-jrn.210548094.20,knb-lter-jrn,210548094,20,548,CSIS instrumentation on a wireless network,CSIS met stations,Study 548 - CSIS met stations
+210548,knb-lter-jrn.210548051.23,knb-lter-jrn,210548051,23,548,CSIS instrumentation on a wireless network,CSIS met stations,Study 548 - CSIS met stations
+210548,knb-lter-jrn.210548022.23,knb-lter-jrn,210548022,23,548,CSIS instrumentation on a wireless network,CSIS met stations,Study 548 - CSIS met stations
+210548,knb-lter-jrn.210548037.23,knb-lter-jrn,210548037,23,548,CSIS instrumentation on a wireless network,CSIS met stations,Study 548 - CSIS met stations
+210548,knb-lter-jrn.210548007.23,knb-lter-jrn,210548007,23,548,CSIS instrumentation on a wireless network,CSIS met stations,Study 548 - CSIS met stations
+210548,knb-lter-jrn.210548009.23,knb-lter-jrn,210548009,23,548,CSIS instrumentation on a wireless network,CSIS met stations,Study 548 - CSIS met stations
+210548,knb-lter-jrn.210548083.23,knb-lter-jrn,210548083,23,548,CSIS instrumentation on a wireless network,CSIS met stations,Study 548 - CSIS met stations
+210548,knb-lter-jrn.210548023.23,knb-lter-jrn,210548023,23,548,CSIS instrumentation on a wireless network,CSIS met stations,Study 548 - CSIS met stations
+210548,knb-lter-jrn.210548008.23,knb-lter-jrn,210548008,23,548,CSIS instrumentation on a wireless network,CSIS met stations,Study 548 - CSIS met stations
+210548,knb-lter-jrn.210548082.23,knb-lter-jrn,210548082,23,548,CSIS instrumentation on a wireless network,CSIS met stations,Study 548 - CSIS met stations
+210548,knb-lter-jrn.210548067.23,knb-lter-jrn,210548067,23,548,CSIS instrumentation on a wireless network,CSIS met stations,Study 548 - CSIS met stations
+210548,knb-lter-jrn.210548095.19,knb-lter-jrn,210548095,19,548,CSIS instrumentation on a wireless network,CSIS met stations,Study 548 - CSIS met stations
+210548,knb-lter-jrn.210548096.20,knb-lter-jrn,210548096,20,548,CSIS instrumentation on a wireless network,CSIS met stations,Study 548 - CSIS met stations
+210548,knb-lter-jrn.210548053.23,knb-lter-jrn,210548053,23,548,CSIS instrumentation on a wireless network,CSIS met stations,Study 548 - CSIS met stations
+210548,knb-lter-jrn.210548052.24,knb-lter-jrn,210548052,24,548,CSIS instrumentation on a wireless network,CSIS met stations,Study 548 - CSIS met stations
+210548,knb-lter-jrn.210548024.23,knb-lter-jrn,210548024,23,548,CSIS instrumentation on a wireless network,CSIS met stations,Study 548 - CSIS met stations
+210548,knb-lter-jrn.210548038.23,knb-lter-jrn,210548038,23,548,CSIS instrumentation on a wireless network,CSIS met stations,Study 548 - CSIS met stations
+210548,knb-lter-jrn.210548039.23,knb-lter-jrn,210548039,23,548,CSIS instrumentation on a wireless network,CSIS met stations,Study 548 - CSIS met stations
+210548,knb-lter-jrn.210548084.23,knb-lter-jrn,210548084,23,548,CSIS instrumentation on a wireless network,CSIS met stations,Study 548 - CSIS met stations
+210548,knb-lter-jrn.210548069.23,knb-lter-jrn,210548069,23,548,CSIS instrumentation on a wireless network,CSIS met stations,Study 548 - CSIS met stations
+210548,knb-lter-jrn.210548068.23,knb-lter-jrn,210548068,23,548,CSIS instrumentation on a wireless network,CSIS met stations,Study 548 - CSIS met stations
+210548,knb-lter-jrn.210548054.23,knb-lter-jrn,210548054,23,548,CSIS instrumentation on a wireless network,CSIS met stations,Study 548 - CSIS met stations
+210548,knb-lter-jrn.210548064.23,knb-lter-jrn,210548064,23,548,CSIS instrumentation on a wireless network,CSIS met stations,Study 548 - CSIS met stations
+210548,knb-lter-jrn.210548091.20,knb-lter-jrn,210548091,20,548,CSIS instrumentation on a wireless network,CSIS met stations,Study 548 - CSIS met stations
+210548,knb-lter-jrn.210548097.20,knb-lter-jrn,210548097,20,548,CSIS instrumentation on a wireless network,CSIS met stations,Study 548 - CSIS met stations
+210548,knb-lter-jrn.210548098.20,knb-lter-jrn,210548098,20,548,CSIS instrumentation on a wireless network,CSIS met stations,Study 548 - CSIS met stations
+210548,knb-lter-jrn.210548020.23,knb-lter-jrn,210548020,23,548,CSIS instrumentation on a wireless network,CSIS met stations,Study 548 - CSIS met stations
+210548,knb-lter-jrn.210548049.23,knb-lter-jrn,210548049,23,548,CSIS instrumentation on a wireless network,CSIS met stations,Study 548 - CSIS met stations
+210548,knb-lter-jrn.210548080.23,knb-lter-jrn,210548080,23,548,CSIS instrumentation on a wireless network,CSIS met stations,Study 548 - CSIS met stations
