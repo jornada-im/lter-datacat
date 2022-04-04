@@ -41,14 +41,14 @@ function initPage(ediscope) {
 
   // get CSV file
   if (!debugOn) {
-  d3.csv('jrn_datasets_projects_2.csv')
-    .then(function (data) {
-      console.log("Loaded")
-      pjrData = data;
-    })
-    .catch(function (error) {
-      console.log("Fail")
-    })
+    d3.csv('dataset_search_columns.csv')
+      .then(function (data) {
+        console.log("Loaded")
+        pjrData = data;
+      })
+      .catch(function (error) {
+        console.log("Fail")
+      })
   }
 
   // toggle between basic and advance search
@@ -525,8 +525,7 @@ function initPage(ediscope) {
               {label: "Begin Date", field_name: "begindate", sort_state: "descending"},
               {label: "End Date", field_name: "enddate", sort_state: "descending"},
               {label: "DOI", field_name: "doi", sort_state: "descending"},
-              {label: "Project", field_name: "project_title", sort_state: "descending"},
-              {label: "Resnotif ID", field_name: "resnotif_id", sort_state: "descending"},
+              {label: "Projects", field_name: "search_column_1", sort_state: "descending"},
             ])
             .enter()
             .append("th")
@@ -549,7 +548,7 @@ function initPage(ediscope) {
 
         if (!debugOn) {
           let newTable = tmpRecs
-            .map(u => ({ ...pjrData.find(q => q.id === u.id), ...u }));
+            .map(u => ({ ...pjrData.find(q => q.merge_id === u.id), ...u }));
             cf = crossfilter(newTable); // Main crossfilter objects
         } else {
           cf = crossfilter(tmpRecs); // Main crossfilter objects
@@ -601,8 +600,7 @@ function initPage(ediscope) {
           function(d) { return d.begindate; },
           function(d) { return d.enddate; },
           function(d) { return d.doi; },
-          function(d) { return d.project_title; },
-          function(d) { return d.resnotif_id; },
+          function(d) { return d.search_column_1; },
         ];
         // Pagination implementation inspired by:
         // https://github.com/dc-js/dc.js/blob/master/web/examples/table-pagination.html
