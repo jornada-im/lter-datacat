@@ -323,7 +323,7 @@ function initPage(ediscope) {
     .append("div")
     .attr("class", "footerDiv")
     .attr("id", "download")
-    .html('<div id="downloadText">Download to CSV</div><button id="downloadButton" class="btn" role="button" value="Download"><a id="downloadButtonA" href="#" download="Jornada_Basin_LTER_Data_Catalog.csv"><i class="fa fa-download"></i></a></button>');
+    .html('<div id="downloadText">Download to CSV</div><a id="downloadButtonA" class="btn" role="button" value="Download" href="#" download="Jornada_Basin_LTER_Data_Catalog.csv"><i class="fa fa-download"></i></a>');
 
   //***Add paging
   d3.select("#footerContainer")
