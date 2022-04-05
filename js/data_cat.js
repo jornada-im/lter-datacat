@@ -38,6 +38,7 @@ function initPage(ediscope) {
   var basicSearchInput = document.getElementById("searchBasicText");
   var searchType = "basic";
   var pjrData;
+  const allOpts = "(On All Projects)";
 
   // get CSV file
   if (!debugOn) {
@@ -45,11 +46,30 @@ function initPage(ediscope) {
       .then(function (data) {
         console.log("Loaded")
         pjrData = data;
+
+        //*** Add select box for available projects */
+        var availableProjects = [...new Set(pjrData.map((item)=>item.search_column_1))];
+        availableProjects.unshift(allOpts);
+
+        var select = d3.select('#byProjectSelDv')
+        .append('select')
+          .attr('id', 'byProjectSel')
+          .attr('class', 'form-control')
+          .on('change', onAvailableProjectsChange)
+    
+      var options = select
+        .selectAll('option')
+        .data(availableProjects).enter()
+        .append('option')
+          .text(function (d) { return d; });
+
       })
       .catch(function (error) {
         console.log("Fail")
       })
   }
+
+
 
   // toggle between basic and advance search
   $("#advance_search_bt").click(function () {
@@ -57,19 +77,29 @@ function initPage(ediscope) {
     var sBar = document.getElementById("basic_search_bar");
     var advDiv = document.getElementById("searchContainer");
     var advBt = document.getElementById("advance_search_bt");
+    var advSearchTab = document.getElementById("advSearchTab");
+    var advMenu1 = document.getElementById("advMenu1");
+    var advMenu2 = document.getElementById("advMenu2");
     if (advDiv.classList.contains("show_advance")) {
       advDiv.classList.remove("show_advance");
       advBt.classList.remove("fa-times");
       advBt.classList.add("fa-sliders");
       sBar.style.removeProperty("width");
+      advSearchTab.style.opacity = 0;
       advBt.dataset.originalTitle = "Advanced Search";
       sDiv.classList.remove("hide");
       basicSearchInput.style.display = "block";
       $("#basic_search_bar span")[0].style.display = "none";
       searchType = "basic";
+      $("#advSearchTab")[0].style.display = "none";
+      $('#advSearchTab a[href="#advMenu1"]').tab('show');
     } else {
       advDiv.classList.add("show_advance");
       sBar.style.width = "200px";
+      setTimeout(function () {
+        advSearchTab.style.opacity = 1;
+      }, 500);
+      
       advBt.classList.remove("fa-sliders");
       advBt.classList.add("fa-times");
       advBt.dataset.originalTitle = "Close Advanced Search";
@@ -77,6 +107,7 @@ function initPage(ediscope) {
       basicSearchInput.style.display = "none";
       $("#basic_search_bar span")[0].style.display = "block";
       searchType = "advance";
+      $("#advSearchTab")[0].style.display = "flex";
     }
     setTimeout(function () {
       adjustTableDiv();
@@ -125,12 +156,7 @@ function initPage(ediscope) {
   //*************************************************
 
   //******Add search containers: 2 rows on wide format
-  d3.select("body")
-    .append("div")
-    .attr("id", "narMenuDiv")
-    .html('<span data-toggle="collapse" data-target="#searchContainer" aria-expanded="false" aria-controls="searchContainer" title="Click to expand/collapse filter options"><i class="fa fa-bars"></i></span>');
-
-  d3.select("body")
+  d3.select("#advMenu1")
     .append("div")
     .attr("class", "containerDiv collapse hide_advance")
     .attr("id", "searchContainer")
@@ -259,6 +285,9 @@ function initPage(ediscope) {
 
   d3.selectAll(".narCaret").on("click", function() { swapCaret(this); });
 
+
+  
+
   //***Swap caret glyphs when clicked
   function swapCaret(tmpEl) {
     if(d3.select(tmpEl).classed("fa-caret-down") == true) {
@@ -293,7 +322,29 @@ function initPage(ediscope) {
     }
   } 
 
-  $("#searchBasic").on("click", function () { queryEDI(); })
+  // perform basic search
+  $("#searchBasic").on("click", function () { 
+    queryEDI(); 
+  })
+
+  // perform advanced search by project
+  $("#searchByBt").on("click", function () { 
+    queryEDI(); 
+  })
+
+
+  // react to changes in available projects select box in advanced search by project
+  function onAvailableProjectsChange() {
+    selectValue = d3.select('#byProjectSel').property('value')
+    // console.log("selected project: " + selectValue);
+    queryEDI();
+  };
+
+  // react to changes in tab search by
+  // $("#advSearchTab").on('click', function() {
+  //   console.log("tab")
+  //   queryEDI();
+  // });
 
   //******Add results container and table
   d3.select("body")
@@ -546,10 +597,28 @@ function initPage(ediscope) {
         
         var initField = d3.select(".info").datum().field_name;
 
+        // join tables
         if (!debugOn) {
           let newTable = tmpRecs
-            .map(u => ({ ...pjrData.find(q => q.merge_id === u.id), ...u }));
-            cf = crossfilter(newTable); // Main crossfilter objects
+          .map(u => ({ ...pjrData.find(q => q.merge_id === u.id), ...u }));
+          if (searchType != "basic" && $("#advSearchTab a.active")[0].id == "advMenuTab2") {
+            // advanced search by Project
+            let selAvailablePrj = d3.select('#byProjectSel').property('value');
+            if (selAvailablePrj != allOpts) {
+              console.log("selected project: " + selAvailablePrj);
+              newTable = newTable.filter(function(el) { 
+                return el.search_column_1 == selAvailablePrj
+              });
+            }
+
+            if(d3.select("#searchProjectBy").property("value") !== "") {
+              var tmpProjectBy = d3.select("#searchProjectBy").property("value").toLowerCase();
+              newTable = newTable.filter(function(el) { 
+                return el.search_column_1.toLowerCase().includes(tmpProjectBy);
+              });
+            }
+          }
+          cf = crossfilter(newTable); // Main crossfilter objects
         } else {
           cf = crossfilter(tmpRecs); // Main crossfilter objects
         }

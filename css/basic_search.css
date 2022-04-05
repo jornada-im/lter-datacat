@@ -79,7 +79,6 @@
     border: 1px solid #cecece;
     border-radius: 34px;
     overflow: hidden;
-    margin-bottom: 30px;
     transition: 0.5s;
     outline-style: solid;
     outline-width: 1px;
@@ -216,9 +215,27 @@
 
 .hide_advance {
     height: 0px;
-    margin-top: -20px;
 }
 
 .show_advance {
     height: 222px;
+}
+
+.by_container {
+    width: 100%;
+}
+
+.by_container ul {
+    position: fixed;
+    right: 30px;
+    top: 18px;
+    left: 35%;
+    opacity: 0;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    color: #fff;
+    background-color: #00004c;
 }

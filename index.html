@@ -55,13 +55,81 @@
             </i>
           </div>
           <div class="input-field second-wrap">
-            <button class="btn-search" type="button" id="searchBasic">
+            <button id="searchBasic" class="btn-search" type="button">
               <i class="fa fa-search"></i><h4>Search</h4>
             </button>
           </div>
         </div>
       </div>
     </div>
+    
+    <div class="by_container">
+      <!-- Nav pills -->
+      <ul id="advSearchTab" class="nav nav-pills" role="tablist">
+        <li class="nav-item">
+          <a id="advMenuTab1" class="nav-link active" data-toggle="pill" href="#advMenu1">
+            By Keyword, Author, Title, and Coverage
+          </a>
+        </li>
+        <li class="nav-item">
+          <a id="advMenuTab2" class="nav-link" data-toggle="pill" href="#advMenu2">
+            By Project
+          </a>
+        </li>
+      </ul>
+    
+      <!-- Tab panes -->
+      <div class="tab-content">
+        <div id="advMenu1" class="by_container tab-pane active"></div>
+        <div id="advMenu2" class="by_container tab-pane fade">
+          
+          <div id="searchBy" class="containerDiv show_advance">
+              <div class="searchCrit">
+                <div class="searchTopDiv">
+                  <h4>Available Projects
+                    <span>
+                      <i class="fa fa-info-circle" data-toggle="tooltip" data-container="body" data-placement="auto" 
+                        data-html="true" title="" 
+                        data-original-title="<p><b><u>Available Projects</u></b></p>
+                          <p>Restrict the search on selected project.</p>"></i>
+                    </span>
+                  </h4>
+                </div>
+                <div class="searchInput">
+                  <div id = "byProjectSelDv" class="form-group">
+                  </div>
+                </div>
+              </div>
+              <div class="searchCrit">
+                <div class="searchTopDiv">
+                  <h4>Projects
+                    <span>
+                      <i class="fa fa-info-circle" data-toggle="tooltip" data-container="body" data-placement="auto" 
+                        data-html="true" title="" 
+                        data-original-title="<p><b><u>Projects</u></b></p>
+                          <p>Search by words present in the project name of the data catalog.
+                          <br><br>Multiple words will be treated as a single search term.</p>"></i>
+                    </span>
+                  </h4>
+                </div>
+                <div class="searchInput">
+                  <input id="searchProjectBy" class="searchSel">
+                </div>
+              </div>
+              <div class="searchCrit">
+                <button id="searchByBt" class="btn">
+                  <i class="fa fa-search"></i>
+                  <h4>Search</h4>
+                </button>
+              </div>
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+
+
   </body>
     
 </html>
