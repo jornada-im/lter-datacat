@@ -160,12 +160,11 @@ label {
   padding-left: 10px;
 }
 
-#dc-table-graph td:nth-child(2), #dc-table-graph th:nth-child(2) {
-  width: 150px;
-}
-
-#dc-table-graph td:nth-child(3), #dc-table-graph th:nth-child(3), #dc-table-graph td:nth-child(4), #dc-table-graph th:nth-child(4) {
-  width: 105px;
+#dc-table-graph td:nth-child(2), 
+#dc-table-graph td:nth-child(3), 
+#dc-table-graph td:nth-child(4), 
+#dc-table-graph td:nth-child(6){
+  min-width: 105px;
 }
 
 #dc-table-graph td:nth-child(5), #dc-table-graph th:nth-child(5) {
