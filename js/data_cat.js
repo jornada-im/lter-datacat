@@ -69,8 +69,6 @@ function initPage(ediscope) {
       })
   }
 
-
-
   // toggle between basic and advance search
   $("#advance_search_bt").click(function () {
     var sDiv = document.getElementById("basic_search_div");
@@ -81,6 +79,15 @@ function initPage(ediscope) {
     var advMenu1 = document.getElementById("advMenu1");
     var advMenu2 = document.getElementById("advMenu2");
     if (advDiv.classList.contains("show_advance")) {
+      // clear inputs in adavanced search
+      d3.select("#keywordsSel").property("value", "");
+      d3.select("#authorsSel").property("value", "");
+      d3.select("#titleSel").property("value", "");
+      d3.select("#beginYearSel").property("value", "");
+      d3.select("#endYearSel").property("value", "");
+      d3.select('#byProjectSel').property("value", allOpts);
+      d3.select('#searchProjectBy').property("value", "");
+      // hide advanced search and show basic search
       advDiv.classList.remove("show_advance");
       advBt.classList.remove("fa-times");
       advBt.classList.add("fa-sliders");
@@ -94,12 +101,14 @@ function initPage(ediscope) {
       $("#advSearchTab")[0].style.display = "none";
       $('#advSearchTab a[href="#advMenu1"]').tab('show');
     } else {
+      // clear input in basic search
+      basicSearchInput.value = "";
+      // show advanced search and hide basic search
       advDiv.classList.add("show_advance");
       sBar.style.width = "200px";
       setTimeout(function () {
         advSearchTab.style.opacity = 1;
       }, 500);
-      
       advBt.classList.remove("fa-sliders");
       advBt.classList.add("fa-times");
       advBt.dataset.originalTitle = "Close Advanced Search";
@@ -109,6 +118,9 @@ function initPage(ediscope) {
       searchType = "advance";
       $("#advSearchTab")[0].style.display = "flex";
     }
+    // refresh table with full content
+    queryEDI();
+
     setTimeout(function () {
       adjustTableDiv();
     }, 500);
@@ -285,9 +297,6 @@ function initPage(ediscope) {
 
   d3.selectAll(".narCaret").on("click", function() { swapCaret(this); });
 
-
-  
-
   //***Swap caret glyphs when clicked
   function swapCaret(tmpEl) {
     if(d3.select(tmpEl).classed("fa-caret-down") == true) {
@@ -335,16 +344,29 @@ function initPage(ediscope) {
 
   // react to changes in available projects select box in advanced search by project
   function onAvailableProjectsChange() {
-    selectValue = d3.select('#byProjectSel').property('value')
+    // selectValue = d3.select('#byProjectSel').property('value')
     // console.log("selected project: " + selectValue);
     queryEDI();
   };
 
-  // react to changes in tab search by
-  // $("#advSearchTab").on('click', function() {
-  //   console.log("tab")
-  //   queryEDI();
-  // });
+  //react to changes in tab search by
+  $("#advSearchTab").on('click', function() {
+    var cTab = $("#advSearchTab a.active")[0].id;
+    console.log("tab: " + cTab)
+    if (cTab != "advMenuTab1") {
+      // clear inputs in By Project Tab
+      d3.select('#byProjectSel').property("value", allOpts);
+      d3.select('#searchProjectBy').property("value", "");
+    } else {
+      // clear inputs in advanced by Keyword...
+      d3.select("#keywordsSel").property("value", "");
+      d3.select("#authorsSel").property("value", "");
+      d3.select("#titleSel").property("value", "");
+      d3.select("#beginYearSel").property("value", "");
+      d3.select("#endYearSel").property("value", "");
+    }
+   queryEDI();
+  });
 
   //******Add results container and table
   d3.select("body")
@@ -367,7 +389,7 @@ function initPage(ediscope) {
     .style("margin-left", "10px")
     .attr("class", "footerDiv")
     .attr("id", "recShow")
-    .html('<div id="recShowText">Records to show</div><input id="recShowVal" class="searchSel" type="number" value="10" min="1" step="1"></input>');
+    .html('<div id="recShowText">Records to show</div><input id="recShowVal" class="searchSel" type="number" value="25" min="1" step="1"></input>');
 
   //***Add download option
   d3.select("#footerContainer")

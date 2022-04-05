@@ -15,7 +15,7 @@ html, body {
   margin: 10px;
   background: white;
   border-radius: 4px;
-  transition: 0.5s;
+  transition: 0.7s;
   overflow: hidden;
 }
 
@@ -115,7 +115,6 @@ label {
   display: inline-block;
   margin-left: 5px;
   margin-bottom: 0;
-  /* color: white; */
 }
 
 #noRecs {
@@ -134,7 +133,6 @@ label {
   z-index: 2;
   background: #00004c;
   padding: 8px;
-}
 }
 
 #tableDiv th:hover {

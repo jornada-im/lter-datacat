@@ -63,7 +63,6 @@
 }
 
 .basic-search-container.hide {
-    padding: 0px 0 0 15px;
     -ms-flex-pack: left;
     justify-content: left;
 }
@@ -228,7 +227,7 @@
 .by_container ul {
     position: fixed;
     right: 30px;
-    top: 18px;
+    top: 34px;
     left: 35%;
     opacity: 0;
     overflow: hidden;
