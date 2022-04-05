@@ -10,9 +10,9 @@ html, body {
 }
 
 .containerDiv {
-  width: calc(100% - 20px);
+  /* width: calc(100% - 20px); */
   text-align: center;
-  margin: 10px;
+  margin: 0;
   background: white;
   border-radius: 4px;
   transition: 0.7s;
@@ -24,7 +24,7 @@ html, body {
 }
 
 .searchCrit {
-  margin: 1vh 1vw 0;
+  margin: 5px 5px 0;
   display: inline-block;
   width: 31%;
   vertical-align: top;
