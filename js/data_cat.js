@@ -573,8 +573,8 @@ function initPage(ediscope) {
             .data([
               {label: "Title", field_name: "title", sort_state: "ascending"},
               {label: "Author", field_name: "authors", sort_state: "descending"},
-              {label: "Begin Date", field_name: "begindate", sort_state: "descending"},
-              {label: "End Date", field_name: "enddate", sort_state: "descending"},
+              {label: "Begin", field_name: "begindate", sort_state: "descending"},
+              {label: "End", field_name: "enddate", sort_state: "descending"},
               {label: "DOI", field_name: "doi", sort_state: "descending"},
               {label: "Project", field_name: "search_column_1", sort_state: "descending"},
             ])

@@ -61,7 +61,7 @@ html, body {
 .searchTopDiv .fa, .table .fa {
   opacity: 0.7;
   color: gray;
-  margin-left: 10px;
+  margin-left: 5px;
   font-size: 0.8em;
   cursor: pointer;
 }
@@ -133,6 +133,8 @@ label {
   top: -0.5px;
   z-index: 2;
   background: #00004c;
+  padding: 8px;
+}
 }
 
 #tableDiv th:hover {
@@ -158,12 +160,12 @@ label {
   padding-left: 10px;
 }
 
-#dc-table-graph td:nth-child(2), #dc-table-graph td:nth-child(4), #dc-table-graph th:nth-child(2), #dc-table-graph th:nth-child(4) {
+#dc-table-graph td:nth-child(2), #dc-table-graph th:nth-child(2) {
   width: 150px;
 }
 
-#dc-table-graph td:nth-child(3), #dc-table-graph th:nth-child(3) {
-  width: 155px;
+#dc-table-graph td:nth-child(3), #dc-table-graph th:nth-child(3), #dc-table-graph td:nth-child(4), #dc-table-graph th:nth-child(4) {
+  width: 105px;
 }
 
 #dc-table-graph td:nth-child(5), #dc-table-graph th:nth-child(5) {
