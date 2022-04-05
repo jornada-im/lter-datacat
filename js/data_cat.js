@@ -38,7 +38,7 @@ function initPage(ediscope) {
   var basicSearchInput = document.getElementById("searchBasicText");
   var searchType = "basic";
   var pjrData;
-  const allOpts = "(On All Projects)";
+  const allOpts = "(All Projects)";
 
   // get CSV file
   if (!debugOn) {
@@ -269,7 +269,7 @@ function initPage(ediscope) {
     })
     .on("change", function() { yearCheck(this, 0); });
 
-  //*** Add search Button for advance search */
+  //*** Add search Button for advanced search */
   sd.append("div")
     .attr("class", "searchCrit")
     .append("button")
@@ -576,7 +576,7 @@ function initPage(ediscope) {
               {label: "Begin Date", field_name: "begindate", sort_state: "descending"},
               {label: "End Date", field_name: "enddate", sort_state: "descending"},
               {label: "DOI", field_name: "doi", sort_state: "descending"},
-              {label: "Projects", field_name: "search_column_1", sort_state: "descending"},
+              {label: "Project", field_name: "search_column_1", sort_state: "descending"},
             ])
             .enter()
             .append("th")
