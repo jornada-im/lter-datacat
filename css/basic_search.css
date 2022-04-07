@@ -232,6 +232,7 @@
     opacity: 0;
     overflow: hidden;
     transition: 0.5s;
+    display: none;
 }
 
 .nav-pills .nav-link.active, .nav-pills .show>.nav-link {

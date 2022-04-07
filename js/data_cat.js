@@ -93,6 +93,7 @@ function initPage(ediscope) {
       advBt.classList.add("fa-sliders");
       sBar.style.removeProperty("width");
       advSearchTab.style.opacity = 0;
+      advSearchTab.style.removeProperty("display");
       advBt.dataset.originalTitle = "Advanced Search";
       sDiv.classList.remove("hide");
       basicSearchInput.style.display = "block";
@@ -106,6 +107,7 @@ function initPage(ediscope) {
       // show advanced search and hide basic search
       advDiv.classList.add("show_advance");
       sBar.style.width = "200px";
+      advSearchTab.style.display = "block";
       setTimeout(function () {
         advSearchTab.style.opacity = 1;
       }, 500);
